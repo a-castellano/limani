@@ -98,16 +98,6 @@ build_base_hugo_image:
     dependencies:
     - build_base_image
 
-build_base_develop_hugo_image:
-    stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
-    script:
-        - export IMAGENAME=base_develop_hugo
-        - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
-    dependencies:
-    - build_base_develop_image
-
 build_base_kubectl_image:
     stage: build_base_inherited_images
     image: daedalusproject/base_docker:202009102033
