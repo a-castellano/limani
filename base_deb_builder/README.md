@@ -7,6 +7,6 @@ This image is based on Daedalus Project [base image](/base) comes with Debian pa
 Packages installed:
 
  * dpkg-dev (1.19.7ubuntu3)
- * debhelper (12.10ubuntu1)
- * build-essential (12.8ubuntu1)
+ * debhelper (13.2)
+ * build-essential (12.8ubuntu1.1)
  * fakeroot (1.24-1)
