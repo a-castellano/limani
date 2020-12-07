@@ -7,4 +7,4 @@ This image is based on Daedalus Project [base image](/base) comes with git insta
 Packages installed:
 
  * git (1:2.25.1-1ubuntu3)
- * ca-certificates (20190110ubuntu1.1)
+ * ca-certificates (20201027ubuntu0.20.04.1)

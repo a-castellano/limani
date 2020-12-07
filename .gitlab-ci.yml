@@ -14,7 +14,7 @@ build_base_image:
     artifacts:
         paths:
         - timestamp
-        expire_in: 120 minutes
+        expire_in: 240 minutes
 
 build_base_develop_image:
     stage: build_base
@@ -26,7 +26,7 @@ build_base_develop_image:
     artifacts:
         paths:
         - timestamp
-        expire_in: 120 minutes
+        expire_in: 240 minutes
 
 build_base_node12_image:
     stage: build_base_inherited_images
@@ -98,16 +98,6 @@ build_base_hugo_image:
     dependencies:
     - build_base_image
 
-build_base_develop_hugo_image:
-    stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
-    script:
-        - export IMAGENAME=base_develop_hugo
-        - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
-    dependencies:
-    - build_base_develop_image
-
 build_base_kubectl_image:
     stage: build_base_inherited_images
     image: daedalusproject/base_docker:202009102033
@@ -118,7 +108,7 @@ build_base_kubectl_image:
     artifacts:
         paths:
         - timestamp
-        expire_in: 120 minutes
+        expire_in: 240 minutes
     dependencies:
     - build_base_image
 
@@ -192,7 +182,7 @@ build_base_java_11_image:
     artifacts:
         paths:
         - timestamp
-        expire_in: 120 minutes
+        expire_in: 240 minutes
     dependencies:
     - build_base_image
 
@@ -206,7 +196,7 @@ build_base_golang_1_13_image:
     artifacts:
         paths:
         - timestamp
-        expire_in: 120 minutes
+        expire_in: 240 minutes
     dependencies:
     - build_base_image
 
@@ -220,7 +210,7 @@ build_base_golang_1_14_image:
     artifacts:
         paths:
         - timestamp
-        expire_in: 120 minutes
+        expire_in: 240 minutes
     dependencies:
     - build_base_image
 
@@ -406,7 +396,7 @@ build_base_selenium:
     artifacts:
         paths:
         - timestamp
-        expire_in: 120 minutes
+        expire_in: 240 minutes
     dependencies:
     - build_base_java_11_image
 
