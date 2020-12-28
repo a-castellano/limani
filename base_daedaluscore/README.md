@@ -1,8 +1,6 @@
 # base_daedaluscore
 
-[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/daedalusproject/base_daedaluscore)
-
-This image is based on Daedalus Project [base_kubectl image](/base_kubectl), it comes with [Daedalus-Core](https://git.daedalus-project.io/daedalusproject/Daedalus-Core) build and test utilities installed.
+This image is based on [base_kubectl image](/base_kubectl), it comes with [Daedalus-Core](https://git.daedalus-project.io/daedalusproject/Daedalus-Core) build and test utilities installed.
 
 Packages installed:
 

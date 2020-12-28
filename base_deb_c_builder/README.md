@@ -1,7 +1,5 @@
 # base_deb_c_builder
 
-[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/daedalusproject/base_deb_c_builder)
-
 This image is based on Daedalus Project [base deb builder image](/base_deb_builder) comes with Debian packaging utilities (c flavour).
 
 Packages installed:

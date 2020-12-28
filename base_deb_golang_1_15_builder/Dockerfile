@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=daedalusproject/base_deb_builder
+ARG BASE_IMAGE=registry.windmaker.net:5005/a-castellano/limani/base_deb_builder
 FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>

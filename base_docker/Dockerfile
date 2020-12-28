@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=daedalusproject/base
+ARG BASE_IMAGE=registry.windmaker.net:5005/a-castellano/limani/base
 FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
@@ -9,7 +9,7 @@ RUN \
  docker-ce=5:19.03.12~3-0~ubuntu-bionic \
  docker-ce-cli=5:19.03.12~3-0~ubuntu-bionic \
  containerd.io=1.2.13-2 \
- daedalus-project-docker-build=0.2-4 \
+ docker-build=0.4-1 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*

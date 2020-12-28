@@ -2,7 +2,7 @@
 
 [![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/daedalusproject/td_agent)
 
-This image is based on Daedalus Project [base image](/base) and comes with td-agent-bit installed.
+This image is based on [base image](/base) and it comes with td-agent-bit installed.
 
 Packages installed:
 
