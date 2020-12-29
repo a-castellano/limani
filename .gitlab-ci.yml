@@ -1,3 +1,5 @@
+image: registry.windmaker.net:5005/a-castellano/limani/base_docker:latest
+
 stages:
     - build_base
     - build_base_inherited_images
@@ -6,11 +8,10 @@ stages:
 
 build_base_image:
     stage: build_base
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base
+        - export IMAGE_NAME=base
         - export IS_BASE_IMAGE=1
-        - daedalus-project-docker-build
+        - docker-build
     artifacts:
         paths:
         - timestamp
@@ -18,11 +19,10 @@ build_base_image:
 
 build_base_develop_image:
     stage: build_base
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_develop
+        - export IMAGE_NAME=base_develop
         - export IS_BASE_IMAGE=1
-        - daedalus-project-docker-build
+        - docker-build
     artifacts:
         paths:
         - timestamp
@@ -30,81 +30,55 @@ build_base_develop_image:
 
 build_base_node12_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_node12
+        - export IMAGE_NAME=base_node12
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_git_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_git
+        - export IMAGE_NAME=base_git
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_nginx_light_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_nginx_light
+        - export IMAGE_NAME=base_nginx_light
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_develop_nginx_light_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_develop_nginx_light
+        - export IMAGE_NAME=base_develop_nginx_light
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
-    dependencies:
-    - build_base_image
-
-build_base_nginx_daedalus_light_image:
-    stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
-    script:
-        - export IMAGENAME=base_nginx_daedalus_light
-        - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
-    dependencies:
-    - build_base_image
-
-build_base_develop_nginx_daedalus_light_image:
-    stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
-    script:
-        - export IMAGENAME=base_develop_nginx_daedalus_light
-        - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_hugo_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_hugo
+        - export IMAGE_NAME=base_hugo
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_kubectl_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_kubectl
+        - export IMAGE_NAME=base_kubectl
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     artifacts:
         paths:
         - timestamp
@@ -114,71 +88,64 @@ build_base_kubectl_image:
 
 build_base_xml_utils_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_xml_utils
+        - export IMAGE_NAME=base_xml_utils
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_bash_utils_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_bash_utils
+        - export IMAGE_NAME=base_bash_utils
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_perl_utils_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_perl_utils
+        - export IMAGE_NAME=base_perl_utils
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_redis_server_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_redis_server
+        - export IMAGE_NAME=base_redis_server
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_rabbitmq_server_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_rabbitmq_server
+        - export IMAGE_NAME=base_rabbitmq_server
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_deb_builder_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_deb_builder
+        - export IMAGE_NAME=base_deb_builder
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_java_11_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_java_11
+        - export IMAGE_NAME=base_java_11
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     artifacts:
         paths:
         - timestamp
@@ -188,11 +155,10 @@ build_base_java_11_image:
 
 build_base_golang_1_13_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_golang_1_13
+        - export IMAGE_NAME=base_golang_1_13
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     artifacts:
         paths:
         - timestamp
@@ -202,11 +168,10 @@ build_base_golang_1_13_image:
 
 build_base_golang_1_14_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_golang_1_14
+        - export IMAGE_NAME=base_golang_1_14
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     artifacts:
         paths:
         - timestamp
@@ -216,11 +181,10 @@ build_base_golang_1_14_image:
 
 build_base_golang_1_15_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_golang_1_15
+        - export IMAGE_NAME=base_golang_1_15
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     artifacts:
         paths:
         - timestamp
@@ -230,65 +194,59 @@ build_base_golang_1_15_image:
 
 build_base_curl_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_curl
+        - export IMAGE_NAME=base_curl
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_deb_perl_builder_image:
     stage: build_base_inherited_images_2nd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_deb_perl_builder
+        - export IMAGE_NAME=base_deb_perl_builder
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
     - build_base_deb_builder_image
 
 build_base_deb_c_builder_image:
     stage: build_base_inherited_images_2nd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_deb_c_builder
+        - export IMAGE_NAME=base_deb_c_builder
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
     - build_base_deb_builder_image
 
 build_base_deb_golang_1_13_builder_image:
     stage: build_base_inherited_images_2nd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_deb_golang_1_13_builder
+        - export IMAGE_NAME=base_deb_golang_1_13_builder
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
     - build_base_deb_builder_image
 
 build_base_deb_golang_1_14_builder_image:
     stage: build_base_inherited_images_2nd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_deb_golang_1_14_builder
+        - export IMAGE_NAME=base_deb_golang_1_14_builder
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
     - build_base_deb_builder_image
 
 build_base_deb_golang_1_15_builder_image:
     stage: build_base_inherited_images_2nd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_deb_golang_1_15_builder
+        - export IMAGE_NAME=base_deb_golang_1_15_builder
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
     - build_base_deb_builder_image
@@ -297,102 +255,74 @@ build_base_deb_golang_1_15_builder_image:
 
 build_base_deb_python3_builder_image:
     stage: build_base_inherited_images_2nd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_deb_python3_builder
+        - export IMAGE_NAME=base_deb_python3_builder
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
     - build_base_deb_builder_image
 
 build_base_develop_percona_server_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_develop_percona_server
+        - export IMAGE_NAME=base_develop_percona_server
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_develop_image
 
 build_base_percona_server_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_percona_server
+        - export IMAGE_NAME=base_percona_server
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_percona_client_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_percona_client
+        - export IMAGE_NAME=base_percona_client
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_docker_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_docker
+        - export IMAGE_NAME=base_docker
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_openssl_image:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_openssl
+        - export IMAGE_NAME=base_openssl
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
 build_base_logrotate:
     stage: build_base_inherited_images
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_logrotate
+        - export IMAGE_NAME=base_logrotate
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_image
 
-      #build_base_td_agent:
-      #    stage: build_base_inherited_images
-      #    image: daedalusproject/base_docker:202009102033
-      #    script:
-      #        - export IMAGENAME=base_td_agent
-      #        - export IS_BASE_IMAGE=0
-      #        - daedalus-project-docker-build
-      #    dependencies:
-      #    - build_base_image
-      #
-      #build_base_td_agent_bit:
-      #    stage: build_base_inherited_images
-      #    image: daedalusproject/base_docker:202009102033
-      #    script:
-      #        - export IMAGENAME=base_td_agent_bit
-      #        - export IS_BASE_IMAGE=0
-      #        - daedalus-project-docker-build
-      #    dependencies:
-      #    - build_base_image
-
 build_base_selenium:
     stage: build_base_inherited_images_2nd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_selenium
+        - export IMAGE_NAME=base_selenium
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     artifacts:
         paths:
         - timestamp
@@ -402,20 +332,18 @@ build_base_selenium:
 
 build_base_selenium_chrome:
     stage: build_base_inherited_images_3rd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_selenium_chrome
+        - export IMAGE_NAME=base_selenium_chrome
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_selenium
 
 build_base_selenium_grid:
     stage: build_base_inherited_images_3rd_gen
-    image: daedalusproject/base_docker:202009102033
     script:
-        - export IMAGENAME=base_selenium_grid
+        - export IMAGE_NAME=base_selenium_grid
         - export IS_BASE_IMAGE=0
-        - daedalus-project-docker-build
+        - docker-build
     dependencies:
     - build_base_selenium

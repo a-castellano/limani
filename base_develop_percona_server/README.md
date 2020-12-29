@@ -2,7 +2,7 @@
 
 [![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/daedalusproject/base_develop_percona_server)
 
-This image is based on Daedalus Project [base develop image](/base_develop) comes with percona-server-server installed.
+This image is based on [base develop image](/base_develop) comes with percona-server-server installed.
 
 Packages installed:
 

@@ -1,8 +1,8 @@
 # Limani
 
-[Orignal Repo](https://git.daedalus-project.io/docker/Limani)
+[Orignal Repo](https://git.windmaker.net/a-castellano/limani)
 
-Docker manifests of images used by one or more Daedalus Project Sub-projects.
+Docker manifests of images used by one or more of my personal projects.
 
 ## Available images
 

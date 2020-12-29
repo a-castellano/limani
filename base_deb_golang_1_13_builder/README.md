@@ -2,7 +2,7 @@
 
 [![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/daedalusproject/base_deb_golang_1_13_builder)
 
-This image is based on Daedalus Project [base deb builder image](/base_deb_builder) comes with Debian packaging utilities (golang 1.13 flavour).
+This image is based on [base deb builder image](/base_deb_builder) comes with Debian packaging utilities (golang 1.13 flavour).
 
 Packages installed:
 

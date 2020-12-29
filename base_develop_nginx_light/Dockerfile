@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=daedalusproject/base_develop
+ARG BASE_IMAGE=registry.windmaker.net:5005/a-castellano/limani/base_develop
 FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
