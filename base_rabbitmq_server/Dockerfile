@@ -3,7 +3,7 @@ FROM $BASE_IMAGE
 MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 
 COPY base_rabbitmq_server/files/rabbitmq.conf /tmp/rabbitmq.con
-COPY base_rabbitmq_server/enabled_plugins /tmp/enabled_plugins
+COPY base_rabbitmq_server/files/enabled_plugins /tmp/enabled_plugins
 
 RUN \
  apt-get update -qq && \
