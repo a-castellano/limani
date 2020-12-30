@@ -2,7 +2,7 @@
 
 [![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/daedalusproject/base_nginx_daedalus_light)
 
-This image is based on Daedalus Project [base image](/base) comes with nginx-daedalus-light installed.
+This image is based on [base image](/base) and it comes with nginx-daedalus-light installed.
 
 Packages installed:
 
