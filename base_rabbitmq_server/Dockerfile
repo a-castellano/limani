@@ -8,8 +8,8 @@ COPY base_rabbitmq_server/files/enabled_plugins /tmp/enabled_plugins
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y rabbitmq-server=3.8.7-1 --no-install-recommends && \
- mv /tmp/rabbitmq.con /tmp/enabled_plugins /etc/rabbitmq-server/ && \
- chown rabbitmq:rabbitmq /etc/rabbitmq-server/* && \
+ mv /tmp/rabbitmq.con /tmp/enabled_plugins /etc/rabbitmq/ && \
+ chown rabbitmq:rabbitmq /etc/rabbitmq/* && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*
 
