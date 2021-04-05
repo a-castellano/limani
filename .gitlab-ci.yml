@@ -1,4 +1,4 @@
-image: registry.windmaker.net:5005/a-castellano/limani/base_docker:202012300901
+image: registry.windmaker.net:5005/a-castellano/limani/base_docker:202012301714
 
 stages:
     - build_base
@@ -250,8 +250,6 @@ build_base_deb_golang_1_15_builder_image:
     dependencies:
     - build_base_image
     - build_base_deb_builder_image
-
-
 
 build_base_deb_python3_builder_image:
     stage: build_base_inherited_images_2nd_gen

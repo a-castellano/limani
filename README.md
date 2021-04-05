@@ -55,6 +55,7 @@ Docker manifests of images used by one or more of my personal projects.
 * [base_golang_1_13](/base_golang_1_13): base image with golang 1.13 installed.
 * [base_golang_1_14](/base_golang_1_14): base image with golang 1.14 installed.
 * [base_golang_1_15](/base_golang_1_15): base image with golang 1.15 installed.
+* [base_golang_1_16](/base_golang_1_16): base image with golang 1.16 installed.
 * [base_selenium](/base_selenium): base image with selenium installed.
 * [base_selenium_grid](/base_selenium_grid): base image running Selenium grid.
 * [base_selenium_chrome](/base_selenium_chrome): base image running Selenium using Chromedriver.

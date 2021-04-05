@@ -6,15 +6,15 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- golang-1.14=1.14.3-2ubuntu2~20.04.1 \
- golang-1.14-go=1.14.3-2ubuntu2~20.04.1 \
+ golang-1.14=1.14.3-2ubuntu2~20.04.2 \
+ golang-1.14-go=1.14.3-2ubuntu2~20.04.2 \
  make=4.2.1-1.2 \
- git=1:2.25.1-1ubuntu3 \
- ca-certificates=20201027ubuntu0.20.04.1 \
+ git=1:2.25.1-1ubuntu3.1 \
+ ca-certificates=20210119~20.04.1 \
  go-dep=0.5.4-3 \
  clang=1:10.0-50~exp1 \
  golint=0.0+git20200130.910be7a-1 \
- sudo=1.8.31-1ubuntu1.1 \
+ sudo=1.8.31-1ubuntu1.2 \
  --no-install-recommends && \
  ln -s /usr/lib/go-1.14/bin/go /usr/bin/go && \
  echo "daedalus ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
