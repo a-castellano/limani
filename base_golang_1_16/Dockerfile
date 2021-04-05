@@ -14,7 +14,7 @@ RUN \
  go-dep=0.5.4-3 \
  clang=1:10.0-50~exp1 \
  golint=0.0+git20200130.910be7a-1 \
- sudo=1.8.31-1ubuntu1.1 \
+ sudo=1.8.31-1ubuntu1.2 \
  --no-install-recommends && \
  ln -s /usr/lib/go-1.16/bin/go /usr/bin/go && \
  echo "daedalus ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
