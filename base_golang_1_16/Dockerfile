@@ -7,7 +7,7 @@ RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
  golang-1.16=1.16.2-0ubuntu1 \
- golang-1.16-go=1.16-2ubuntu1 \
+ golang-1.16-go=1.16.2-0ubuntu1 \
  make=4.2.1-1.2 \
  git=1:2.25.1-1ubuntu3.1 \
  ca-certificates=20210119~20.04.1 \
