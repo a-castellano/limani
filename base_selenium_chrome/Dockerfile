@@ -3,8 +3,8 @@ FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 
-COPY base_selenium_chrome/files/config.json /home/daedalus/config.json
-COPY base_selenium_chrome/files/start_selenium /home/daedalus/start_selenium
+COPY base_selenium_chrome/files/config.json /home/ventus/config.json
+COPY base_selenium_chrome/files/start_selenium /home/ventus/start_selenium
 
 RUN \
  apt-get update -qq && \
@@ -15,7 +15,7 @@ RUN \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*
 
-USER daedalus
+USER ventus
 EXPOSE 5555
 
-CMD ["/bin/bash","/home/daedalus/start_selenium"]
+CMD ["/bin/bash","/home/ventus/start_selenium"]

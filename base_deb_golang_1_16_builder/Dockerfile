@@ -6,13 +6,13 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- python3-setuptools=45.2.0-1 \
- python3-pip=20.0.2-5ubuntu1.5 \
- python3-dev=3.8.2-0ubuntu2 \
- libffi-dev=3.3-4 \
- equivs=2.2.0 \
- devscripts=2.20.2ubuntu2 \
+ dh-golang \
+ golang-golang-x-sys-dev \
+ golang-1.16=1.16.5-1 \
+ golang-1.16-go=1.16.5-1 \
+ go-bin-deb \
  --no-install-recommends && \
+ ln -s /usr/lib/go-1.16/bin/go /usr/bin/go && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \
  echo -e "DEBEMAIL=\"alvaro.castellano.vela@gmail.com\"\nDEBFULLNAME=\"Álvaro Castellano Vela\"\nexport DEBEMAIL DEBFULLNAME\n" >> ~/.bashrc.backup
