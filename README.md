@@ -27,7 +27,6 @@ Docker manifests of images used by one or more of my personal projects.
 ### Services
 
 * [base_nginx_light](/base_nginx_light): base image with Nginx (light flavour).
-* [base_nginx_daedalus_light](/base_nginx_daedalus_light): base image with Nginx (daedalus light flavour).
 * [base_redis_server](/base_redis_server): base image containing Redis server.
 * [base_rabbitmq_server](/base_rabbitmq_server): base image containing Rabbitmq server.
 * [base_percona_server](/base_percona_server): base image with Percona server.
@@ -46,11 +45,11 @@ Docker manifests of images used by one or more of my personal projects.
 * [base_deb_golang_1_13_builder](/base_deb_golang_1_13_builder): base image containing Debian packaging utilities (golang 1.13 flavour).
 * [base_deb_golang_1_14_builder](/base_deb_golang_1_14_builder): base image containing Debian packaging utilities (golang 1.14 flavour).
 * [base_deb_golang_1_15_builder](/base_deb_golang_1_15_builder): base image containing Debian packaging utilities (golang 1.15 flavour).
+* [base_deb_golang_1_16_builder](/base_deb_golang_1_16_builder): base image containing Debian packaging utilities (golang 1.16 flavour).
 * [base_deb_python3_builder](/base_deb_python3_builder): base image containing Debian packaging utilities (python3 flavour).
 
 ### Misc
 
-* [base_daedaluscore](/base_daedaluscore): base image with [Daedalus Core](https://git.daedalus-project.io/daedalusproject/Daedalus-Core) dependences.
 * [base_java_11](/base_java_11): base image with openjdk-11-jdk-headless installed.
 * [base_golang_1_13](/base_golang_1_13): base image with golang 1.13 installed.
 * [base_golang_1_14](/base_golang_1_14): base image with golang 1.14 installed.
@@ -66,5 +65,4 @@ Docker manifests of images used by one or more of my personal projects.
 * [base_develop_hugo](/base_develop_hugo): base develop image with [Hugo](https://gohugo.io/).
 * [base_develop_percona_server](/base_develop_percona_server): base develop image with Percona server.
 * [base_develop_nginx_light](/base_develop_nginx_light): base develop image with Nginx (light flavour).
-* [base_develop_nginx_daedalus_light](/base_develop_nginx_daedalus_light): base develop image with Nginx (daedalus light flavour).
 
