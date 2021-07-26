@@ -1,4 +1,4 @@
-image: registry.windmaker.net:5005/a-castellano/limani/base_docker:202104052102
+image: registry.windmaker.net:5005/a-castellano/limani/base_docker:202106191213
 
 stages:
     - build_base
