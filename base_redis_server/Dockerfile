@@ -8,7 +8,5 @@ RUN \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*
 
-COPY base_redis_server/conf /etc/redis/redis.conf
-
 EXPOSE 6379
-CMD ["redis-server"]
+CMD ["redis-server","--protected-mode","no"]
