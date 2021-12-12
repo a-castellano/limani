@@ -10,6 +10,7 @@ RUN \
  golang-golang-x-sys-dev \
  golang-1.14 \
  golang-1.14-go \
+ nfpm=2.10.0 \
  go-bin-deb \
  --no-install-recommends && \
  ln -s /usr/lib/go-1.14/bin/go /usr/bin/go && \

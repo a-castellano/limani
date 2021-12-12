@@ -10,6 +10,7 @@ RUN \
  golang-golang-x-sys-dev \
  golang-1.16=1.16.5-1 \
  golang-1.16-go=1.16.5-1 \
+ nfpm=2.10.0 \
  go-bin-deb \
  --no-install-recommends && \
  ln -s /usr/lib/go-1.16/bin/go /usr/bin/go && \
