@@ -9,7 +9,7 @@ RUN \
  golang-1.15=1.15-2ubuntu1 \
  golang-1.15-go=1.15-2ubuntu1 \
  make=4.2.1-1.2 \
- git=1:2.25.1-1ubuntu3.1 \
+ git=1:2.25.1-1ubuntu3.2 \
  ca-certificates=20210119~20.04.2 \
  go-dep=0.5.4-3 \
  clang=1:10.0-50~exp1 \
