@@ -12,6 +12,14 @@ RUN \
  golang-1.13-go \
  nfpm=2.10.0 \
  go-bin-deb \
+ make=4.2.1-1.2 \
+ git=1:2.25.1-1ubuntu3.2 \
+ ca-certificates=20210119~20.04.2 \
+ go-dep=0.5.4-3 \
+ clang=1:10.0-50~exp1 \
+ golint=0.0+git20200130.910be7a-1 \
+ sudo=1.8.31-1ubuntu1.2 \
+ nfpm=2.10.0 \
  --no-install-recommends && \
  ln -s /usr/lib/go-1.13/bin/go /usr/bin/go && \
  apt-get purge -y --auto-remove && \
