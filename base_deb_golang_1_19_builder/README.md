@@ -1,13 +1,13 @@
-# base_deb_golang_1_15_builder
+# base_deb_golang_1_17_builder
 
 [![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/daedalusproject/base_deb_golang_1_14_builder)
 
-This image is based on [base deb builder image](/base_deb_builder) comes with Debian packaging utilities (golang 1.15 flavour).
+This image is based on [base deb builder image](/base_deb_builder) comes with Debian packaging utilities (golang 1.17 flavour).
 
 Packages installed:
 
  * dh-golang
  * golang-golang-x-sys-dev
- * golang-1.15
- * golang-1.15-go
+ * golang-1.16
+ * golang-1.16-go
  * go-bin-deb

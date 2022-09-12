@@ -10,7 +10,7 @@ RUN \
  golang-1.16-go=1.16.5-1 \
  make=4.2.1-1.2 \
  git=1:2.25.1-1ubuntu3.2 \
- ca-certificates=20210119~20.04.2 \
+ ca-certificates=20211016~20.04.1 \
  go-dep=0.5.4-3 \
  clang=1:10.0-50~exp1 \
  golint=0.0+git20200130.910be7a-1 \
