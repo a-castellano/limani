@@ -10,6 +10,7 @@ RUN \
  debhelper=13.6ubuntu1~bpo20.04.1 \
  build-essential=12.8ubuntu1.1 \
  fakeroot=1.24-1 \
+ libdebhelper-perl=13.6ubuntu1~bpo20.04.1 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \
