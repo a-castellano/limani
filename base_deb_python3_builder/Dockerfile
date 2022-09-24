@@ -11,7 +11,7 @@ RUN \
  python3-dev=3.8.2-0ubuntu2 \
  libffi-dev=3.3-4 \
  equivs=2.2.0 \
- devscripts=2.20.2ubuntu2 \
+ devscripts=2.22.1ubuntu1~bpo20.04.1 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \
