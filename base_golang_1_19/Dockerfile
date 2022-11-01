@@ -17,7 +17,7 @@ RUN \
  sudo=1.8.31-1ubuntu1.2 \
  nfpm=2.10.0 \
  --no-install-recommends && \
- ln -s /usr/lib/go-1.17/bin/go /usr/bin/go && \
+ ln -s /usr/lib/go-1.19/bin/go /usr/bin/go && \
  echo "daedalus ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
  adduser --disabled-password --gecos '' daedalus && \
  rm -rf /var/lib/apt/lists/*
