@@ -13,7 +13,7 @@ RUN \
  nfpm=2.10.0 \
  go-bin-deb \
  make=4.2.1-1.2 \
- git=1:2.25.1-1ubuntu3.5 \
+ git=1:2.25.1-1ubuntu3.6 \
  ca-certificates=20211016~20.04.1 \
  go-dep=0.5.4-3 \
  clang=1:10.0-50~exp1 \
