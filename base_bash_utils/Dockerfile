@@ -6,13 +6,13 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- shellcheck=0.7.0-2build2 \
- shunit2=2.1.6-1.1ubuntu1 \
- make=4.2.1-1.2 \
- ruby=1:2.7+1 \
+ shellcheck=0.8.0-2 \
+ shunit2=2.1.6-1.2 \
+ make=4.3-4.1build1 \
+ ruby=1:3.0~exp1 \
  sudo \
  --no-install-recommends && \
- gem install bashcov --version 1.8.2 && \
+ gem install bashcov --version 3.0.3 && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \
  adduser --disabled-password --gecos '' ventus && \

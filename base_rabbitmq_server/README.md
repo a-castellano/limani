@@ -6,4 +6,4 @@ This image is based on [base image](/base) it comes with rabbit-server installed
 
 Packages installed:
 
- * rabbitmq-server (3.8.17-1)
+ * rabbitmq-server (3.9.13-1ubuntu0.22.04.1)

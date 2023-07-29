@@ -6,4 +6,4 @@ This image is based on [base image](/base) comes with hugo installed.
 
 Packages installed:
 
- * hugo (0.89.4)
+ * hugo (0.115.4)

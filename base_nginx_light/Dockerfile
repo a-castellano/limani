@@ -5,7 +5,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 
 RUN \
  apt-get update -qq && \
- apt-get install -qq -o=Dpkg::Use-Pty=0 -y nginx-light=1.18.0-5 --no-install-recommends && \
+ apt-get install -qq -o=Dpkg::Use-Pty=0 -y nginx-light=1.18.0-6ubuntu14.4 --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \
  echo "server_tokens off;" >> /etc/nginx/conf.d/hide-version.conf

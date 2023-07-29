@@ -6,11 +6,11 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- dpkg-dev=1.19.7ubuntu3.2 \
- debhelper=13.6ubuntu1~bpo20.04.1 \
- build-essential=12.8ubuntu1.1 \
- fakeroot=1.24-1 \
- libdebhelper-perl=13.6ubuntu1~bpo20.04.1 \
+ dpkg-dev=1.21.1ubuntu2.2 \
+ debhelper=13.6ubuntu1 \
+ build-essential=12.9ubuntu3 \
+ fakeroot=1.28-1ubuntu1 \
+ libdebhelper-perl=13.6ubuntu1 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \

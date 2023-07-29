@@ -6,18 +6,17 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- golang-1.17=1.17.3-1~bpo11+1 \
- golang-1.17-go=1.17.3-1~bpo11+1 \
- make=4.2.1-1.2 \
- git=1:2.25.1-1ubuntu3.6 \
- ca-certificates=20211016~20.04.1 \
- go-dep=0.5.4-3 \
- clang=1:10.0-50~exp1 \
- golint=0.0+git20200130.910be7a-1 \
- sudo=1.8.31-1ubuntu1.2 \
- nfpm=2.10.0 \
+ golang-1.20=1.20.3-1ubuntu0.1~22.04 \
+ golang-1.20-go=1.20.3-1ubuntu0.1~22.04 \
+ make=4.3-4.1build1 \
+ git=1:2.34.1-1ubuntu1.9 \
+ ca-certificates=20230311ubuntu0.22.04.1 \
+ clang=1:14.0-55~exp2 \
+ golint=0.0+git20200130.910be7a-1ubuntu0.22.04.2 \
+ sudo=1.9.9-1ubuntu2.4 \
+ nfpm=2.32.0 \
  --no-install-recommends && \
- ln -s /usr/lib/go-1.17/bin/go /usr/bin/go && \
+ ln -s /usr/lib/go-1.20/bin/go /usr/bin/go && \
  echo "daedalus ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
  adduser --disabled-password --gecos '' daedalus && \
  rm -rf /var/lib/apt/lists/*

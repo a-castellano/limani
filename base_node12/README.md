@@ -6,4 +6,4 @@ This image is based on [base image](/base) and it comes with nodejs 12 installed
 
 Packages installed:
 
- * nodejs (12.18.3-1nodesource1)
+ * nodejs (12.22.9~dfsg-1ubuntu3)
