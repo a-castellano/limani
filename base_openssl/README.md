@@ -6,4 +6,4 @@ This image is based on [base image](/base) and it comes with openssl installed.
 
 Packages installed:
 
- * openssl (1.1.1f-1ubuntu2.4)
+ * openssl (3.0.2-0ubuntu1.10)

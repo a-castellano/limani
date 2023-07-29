@@ -6,5 +6,5 @@ This image is based on [base image](/base) and it comes with percona-server-clie
 
 Packages installed:
 
- * percona-server-client (8.0.22-13-1.focal)
+ * percona-server-client (8.0.33-25-1.jammy)
  * daedalus-project-mysql-utils (0.4-7)
