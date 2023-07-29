@@ -9,8 +9,8 @@ RUN \
  dh-make-perl=0.116 \
  libmodule-install-perl=1.19-1 \
  libgit-wrapper-perl=0.048-1 \
- libcatalyst-modules-perl=48 \
- libmodule-build-perl=48+nmu1 \
+ libcatalyst-modules-perl=48+nmu1 \
+ libmodule-build-perl=0.423100-1 \
  libmodule-build-tiny-perl=0.039-1.1 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
