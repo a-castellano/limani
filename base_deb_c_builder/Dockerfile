@@ -6,10 +6,10 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- gcc=4:9.3.0-1ubuntu2 \
- cmake=3.16.3-1ubuntu1 \
- bison=2:3.5.1+dfsg-1 \
- flex=2.6.4-6.2 \
+ gcc=4:11.2.0-1ubuntu1 \
+ cmake=3.22.1-1ubuntu1.22.04.1 \
+ bison=2:3.8.2+dfsg-1build1 \
+ flex=2.6.4-8build2 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \
