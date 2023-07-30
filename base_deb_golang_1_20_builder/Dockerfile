@@ -18,7 +18,7 @@ RUN \
  sudo=1.9.9-1ubuntu2.4 \
  nfpm=2.32.0 \
  --no-install-recommends && \
- ln -s /usr/lib/go-1.19/bin/go /usr/bin/go && \
+ ln -s /usr/lib/go-1.20/bin/go /usr/bin/go && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \
  echo -e "DEBEMAIL=\"alvaro.castellano.vela@gmail.com\"\nDEBFULLNAME=\"Álvaro Castellano Vela\"\nexport DEBEMAIL DEBFULLNAME\n" >> ~/.bashrc.backup
