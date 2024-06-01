@@ -4,6 +4,8 @@ FROM $BASE_IMAGE
 MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 
 RUN \
+ apt-get update -qq && \
+ apt-get install -qq -o=Dpkg::Use-Pty=0 -y gnupg ca-certificates wget --no-install-recommends && \
  echo "deb https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu/ jammy main" >> /etc/apt/sources.list && \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
@@ -20,6 +22,8 @@ RUN \
  nfpm=2.32.0 \
  --no-install-recommends && \
  ln -s /usr/lib/go-1.22/bin/go /usr/bin/go && \
- apt-get purge -y --auto-remove && \
+ apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget openssl && \
+ apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
+ apt-get autoclean -qq -o=Dpkg::Use-Pty=0 -y && \
  rm -rf /var/lib/apt/lists/* && \
  echo -e "DEBEMAIL=\"alvaro.castellano.vela@gmail.com\"\nDEBFULLNAME=\"Álvaro Castellano Vela\"\nexport DEBEMAIL DEBFULLNAME\n" >> ~/.bashrc.backup
