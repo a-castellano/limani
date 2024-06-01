@@ -21,28 +21,18 @@ Docker manifests of images used by one or more of my personal projects.
 * [base_docker](/base_docker): base image with Docker utils installed.
 * [base_git](/base_git): base image with git installed.
 * [base_openssl](/base_openssl): base image with openssl installed.
+* [base_golang_1_22](/base_golang_1_22): base image containing golang 1.22 and packaging utils.
 
 ### Services
 
-* [base_nginx_light](/base_nginx_light): base image with Nginx (light flavour).
 * [base_redis_server](/base_redis_server): base image containing Redis server.
 * [base_rabbitmq_server](/base_rabbitmq_server): base image containing Rabbitmq server.
 * [base_percona_server](/base_percona_server): base image with Percona server.
 * [base_logrotate](/base_logrotate): base image with cron and logrotate.
-
-### Logging
-
-* [base_td_agent](/base_td_agent): base image with td-agent installed.
-* [base_td_agent_bit](/base_td_agent_bit): base image with td-agent-bit installed.
 
 ### Packaging
 
 * [base_deb_builder](/base_deb_builder): base image containing Debian packaging utilities.
 * [base_deb_perl_builder](/base_deb_perl_builder): base image containing Debian packaging utilities (perl flavour).
 * [base_deb_c_builder](/base_deb_c_builder): base image containing Debian packaging utilities (c flavour).
-* [base_deb_golang_1_22_builder](/base_deb_golang_1_22_builder): base image containing Debian packaging utilities (golang 1.22 flavour).
 * [base_deb_python3_builder](/base_deb_python3_builder): base image containing Debian packaging utilities (python3 flavour).
-
-### Misc
-
-* [base_golang_1_22](/base_golang_1_22): base image with golang 1.22 installed.
