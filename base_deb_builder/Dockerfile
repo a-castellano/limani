@@ -6,7 +6,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- dpkg-dev=1.21.1ubuntu2.2 \
+ dpkg-dev=1.21.1ubuntu2.3 \
  debhelper=13.6ubuntu1 \
  build-essential=12.9ubuntu3 \
  fakeroot=1.28-1ubuntu1 \
