@@ -7,12 +7,16 @@ RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y gnupg ca-certificates wget --no-install-recommends && \
  echo "deb https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu/ jammy main" >> /etc/apt/sources.list && \
+ gpg --keyserver keyserver.ubuntu.com --recv-keys  C631127F87FA12D1 && \
+ gpg --keyserver keyserver.ubuntu.com --recv-keys  F6BC817356A3D45E && \
+ gpg --armor --export C631127F87FA12D1 | apt-key add - && \
+ gpg --armor --export F6BC817356A3D45E | apt-key add - && \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
  dh-golang \
  golang-golang-x-sys-dev \
  golang-1.22=1.22.3-1longsleep1+focal \
- golang-1.22-go=1.20.3-1ubuntu0.1~22 \
+ golang-1.22-go=1.22.3-1longsleep1+focal \
  make=4.3-4.1build1 \
  git=1:2.34.1-1ubuntu1.11 \
  ca-certificates=20230311ubuntu0.22.04.1 \
