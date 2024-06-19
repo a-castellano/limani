@@ -27,7 +27,7 @@ RUN \
  nfpm=2.32.0 \
  --no-install-recommends && \
  ln -s /usr/lib/go-1.22/bin/go /usr/bin/go && \
- apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget openssl && \
+ apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget && \
  apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
  apt-get autoclean -qq -o=Dpkg::Use-Pty=0 -y && \
  rm -rf /var/lib/apt/lists/* && \
