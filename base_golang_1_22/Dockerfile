@@ -15,8 +15,8 @@ RUN \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
  dh-golang \
  golang-golang-x-sys-dev \
- golang-1.22=1.22.4-1longsleep1+focal \
- golang-1.22-go=1.22.4-1longsleep1+focal \
+ golang-1.22=1.22.6-1longsleep1+focal \
+ golang-1.22-go=1.22.6-1longsleep1+focal \
  make=4.3-4.1build1 \
  git=1:2.34.1-1ubuntu1.11 \
  ca-certificates=20230311ubuntu0.22.04.1 \
