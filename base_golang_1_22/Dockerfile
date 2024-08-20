@@ -15,17 +15,17 @@ RUN \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
  dh-golang \
  golang-golang-x-sys-dev \
- golang-1.22=1.22.4-1longsleep1+focal \
- golang-1.22-go=1.22.4-1longsleep1+focal \
+ golang-1.22=1.22.6-1longsleep1+focal \
+ golang-1.22-go=1.22.6-1longsleep1+focal \
  make=4.3-4.1build1 \
  git=1:2.34.1-1ubuntu1.11 \
  ca-certificates=20230311ubuntu0.22.04.1 \
- openssl=3.0.2-0ubuntu1.16 \
+ openssl=3.0.2-0ubuntu1.17 \
  clang=1:14.0-55~exp2 \
  golint=0.0+git20200130.910be7a-1ubuntu0.22.04.2 \
  sudo=1.9.9-1ubuntu2.4 \
  nfpm=2.32.0 \
- bind9-host=1:9.18.24-0ubuntu0.22.04.1 \
+ bind9-host=1:9.18.28-0ubuntu0.22.04.1 \
  --no-install-recommends && \
  ln -s /usr/lib/go-1.22/bin/go /usr/bin/go && \
  apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget && \
