@@ -4,6 +4,6 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 
 RUN \
  apt-get update -qq && \
- apt-get install -qq -o=Dpkg::Use-Pty=0 -y hugo=0.133.0 rsync --no-install-recommends && \
+ apt-get install -qq -o=Dpkg::Use-Pty=0 -y hugo=0.133.0 rsync openssh-client --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*
