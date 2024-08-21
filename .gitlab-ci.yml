@@ -26,15 +26,6 @@ build_base_git_image:
     dependencies:
     - build_base_image
 
-build_base_hugo_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_hugo
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
-    - build_base_image
-
 build_base_xml_utils_image:
     stage: build_base_inherited_images
     script:
@@ -129,6 +120,17 @@ build_base_deb_c_builder_image:
     dependencies:
     - build_base_image
     - build_base_deb_builder_image
+
+build_base_hugo_image:
+    stage: build_base_inherited_images_2nd_gen
+    script:
+        - export IMAGE_NAME=base_hugo
+        - export IS_BASE_IMAGE=0
+        - docker-build
+    dependencies:
+    - build_base_image
+    - build_base_golang_1_22_image
+
 
 build_base_deb_python3_builder_image:
     stage: build_base_inherited_images_2nd_gen
