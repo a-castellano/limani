@@ -124,7 +124,7 @@ build_base_deb_c_builder_image:
 build_base_hugo_image:
     stage: build_base_inherited_images_2nd_gen
     script:
-        - export IMAGE_NAME=base_golang_1_22
+        - export IMAGE_NAME=base_hugo
         - export IS_BASE_IMAGE=0
         - docker-build
     dependencies:
