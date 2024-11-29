@@ -92,6 +92,18 @@ build_base_golang_1_22_image:
     dependencies:
     - build_base_image
 
+build_base_golang_1_23_image:
+    stage: build_base_inherited_images
+    script:
+        - export IMAGE_NAME=base_golang_1_23
+        - export IS_BASE_IMAGE=0
+        - docker-build
+    artifacts:
+        paths:
+        - timestamp
+    dependencies:
+    - build_base_image
+
 build_base_curl_image:
     stage: build_base_inherited_images
     script:
@@ -129,7 +141,7 @@ build_base_hugo_image:
         - docker-build
     dependencies:
     - build_base_image
-    - build_base_golang_1_22_image
+    - build_base_golang_1_23_image
 
 
 build_base_deb_python3_builder_image:
