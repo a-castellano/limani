@@ -6,9 +6,9 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- docker-ce=5:24.0.5-1~ubuntu.22.04~jammy \
- docker-ce-cli=5:24.0.5-1~ubuntu.22.04~jammy \
- containerd.io=1.6.21-1 \
+ docker-ce=5:28.1.1-1~ubuntu.24.04~noble \
+ docker-ce-cli=5:28.1.1-1~ubuntu.24.04~noble \
+ containerd.io=1.7.27-1 \
  docker-build=0.4-1 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \

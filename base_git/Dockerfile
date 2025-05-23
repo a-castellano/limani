@@ -5,8 +5,8 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- git=1:2.34.1-1ubuntu1.11 \
- ca-certificates=20240203~22.04.1 \
+ git \
+ ca-certificates \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*

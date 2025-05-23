@@ -6,12 +6,12 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- python3-setuptools=59.6.0-1.2ubuntu0.22.04.2 \
- python3-pip=22.0.2+dfsg-1ubuntu0.5 \
- python3-dev=3.10.6-1~22.04.1 \
- libffi-dev=3.4.2-4 \
+ python3-setuptools=68.1.2-2ubuntu1.1 \
+ python3-pip=24.0+dfsg-1ubuntu1.1 \
+ python3-dev=3.12.3-0ubuntu2 \
+ libffi-dev=3.4.6-1build1 \
  equivs=2.3.1 \
- devscripts=2.22.1ubuntu1 \
+ devscripts=2.23.7 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/* && \

@@ -3,13 +3,15 @@ FROM $BASE_IMAGE
 MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 
 RUN \
- echo percona-server-server percona-server-server/root-pass password letmein | debconf-set-selections && \
- echo percona-server-server percona-server-server/re-root-pass password letmein | debconf-set-selections && \
+ export PERCONA_TELEMETRY_DISABLE=1 && \
+ echo percona-server-server percona-server-server/root-pass password L3tm3_in | debconf-set-selections && \
+ echo percona-server-server percona-server-server/re-root-pass password L3tm3_in | debconf-set-selections && \
  echo percona-server-server percona-server-server/default-auth-override select 1 | debconf-set-selections && \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- percona-server-server=8.0.33-25-1.jammy \
+ percona-server-server=8.4.4-4-1.noble \
  daedalus-project-mysql-utils=0.4-7 \
+ percona-telemetry-agent \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*
