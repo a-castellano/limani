@@ -6,6 +6,6 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y --no-install-recommends \
- openssl=3.0.2-0ubuntu1.18 && \
+ openssl=3.0.13-0ubuntu3.5 && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*

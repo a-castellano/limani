@@ -1,200 +1,199 @@
 image: registry.windmaker.net:5005/a-castellano/limani/base_docker:latest
 
 stages:
-    - build_base
-    - build_base_inherited_images
-    - build_base_inherited_images_2nd_gen
-    - build_base_inherited_images_3rd_gen
+  - build_base
+  - build_base_inherited_images
+  - build_base_inherited_images_2nd_gen
+  - build_base_inherited_images_3rd_gen
 
 build_base_image:
-    stage: build_base
-    script:
-        - export IMAGE_NAME=base
-        - export IS_BASE_IMAGE=1
-        - docker-build
-    artifacts:
-        paths:
-        - timestamp
-        expire_in: 240 minutes
+  stage: build_base
+  script:
+    - export IMAGE_NAME=base
+    - export IS_BASE_IMAGE=1
+    - docker-build
+  artifacts:
+    paths:
+      - timestamp
+    expire_in: 240 minutes
 
 build_base_git_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_git
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_git
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_xml_utils_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_xml_utils
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_xml_utils
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_bash_utils_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_bash_utils
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_bash_utils
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_perl_utils_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_perl_utils
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_perl_utils
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_redis_server_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_redis_server
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_redis_server
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_rabbitmq_server_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_rabbitmq_server
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_rabbitmq_server
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_deb_builder_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_deb_builder
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
-    - build_base_image
-
-build_base_golang_1_22_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_golang_1_22
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    artifacts:
-        paths:
-        - timestamp
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_deb_builder
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_golang_1_23_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_golang_1_23
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    artifacts:
-        paths:
-        - timestamp
-    dependencies:
+  stage: build_base_inherited_images_2nd_gen
+  script:
+    - export IMAGE_NAME=base_golang_1_23
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  artifacts:
+    paths:
+      - timestamp
+  dependencies:
+    - build_base_image
+
+build_base_golang_1_24_image:
+  stage: build_base_inherited_images_2nd_gen
+  script:
+    - export IMAGE_NAME=base_golang_1_24
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  artifacts:
+    paths:
+      - timestamp
+  dependencies:
     - build_base_image
 
 build_base_curl_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_curl
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_curl
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_deb_perl_builder_image:
-    stage: build_base_inherited_images_2nd_gen
-    script:
-        - export IMAGE_NAME=base_deb_perl_builder
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images_2nd_gen
+  script:
+    - export IMAGE_NAME=base_deb_perl_builder
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
     - build_base_deb_builder_image
 
 build_base_deb_c_builder_image:
-    stage: build_base_inherited_images_2nd_gen
-    script:
-        - export IMAGE_NAME=base_deb_c_builder
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images_2nd_gen
+  script:
+    - export IMAGE_NAME=base_deb_c_builder
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
     - build_base_deb_builder_image
 
 build_base_hugo_image:
-    stage: build_base_inherited_images_2nd_gen
-    script:
-        - export IMAGE_NAME=base_hugo
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images_3rd_gen
+  script:
+    - export IMAGE_NAME=base_hugo
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
     - build_base_golang_1_23_image
 
-
 build_base_deb_python3_builder_image:
-    stage: build_base_inherited_images_2nd_gen
-    script:
-        - export IMAGE_NAME=base_deb_python3_builder
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images_2nd_gen
+  script:
+    - export IMAGE_NAME=base_deb_python3_builder
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
     - build_base_deb_builder_image
 
 build_base_percona_server_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_percona_server
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_percona_server
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_percona_client_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_percona_client
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_percona_client
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_docker_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_docker
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_docker
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_openssl_image:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_openssl
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_openssl
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
 
 build_base_logrotate:
-    stage: build_base_inherited_images
-    script:
-        - export IMAGE_NAME=base_logrotate
-        - export IS_BASE_IMAGE=0
-        - docker-build
-    dependencies:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_logrotate
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
     - build_base_image
