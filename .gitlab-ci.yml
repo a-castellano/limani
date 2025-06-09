@@ -113,6 +113,15 @@ build_base_curl_image:
   dependencies:
     - build_base_image
 
+build_base_caddy_image:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_caddy
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
+    - build_base_image
+
 build_base_deb_perl_builder_image:
   stage: build_base_inherited_images_2nd_gen
   script:
