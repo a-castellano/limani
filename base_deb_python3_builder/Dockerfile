@@ -6,7 +6,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- python3-setuptools=68.1.2-2ubuntu1.1 \
+ python3-setuptools=68.1.2-2ubuntu1.2 \
  python3-pip=24.0+dfsg-1ubuntu1.1 \
  python3-dev=3.12.3-0ubuntu2 \
  libffi-dev=3.4.6-1build1 \
