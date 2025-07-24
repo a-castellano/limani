@@ -21,8 +21,8 @@ RUN \
   ca-certificates \
   openssl=3.0.13-0ubuntu3.5 \
   clang=1:18.0-59~exp2 \
-  sudo=1.9.15p5-3ubuntu5 \
-  nfpm=2.42.1 \
+  sudo=1.9.15p5-3ubuntu5.24.04.1 \
+  nfpm=2.43.0 \
   bind9-host=1:9.18.30-0ubuntu0.24.04.2 \
   --no-install-recommends && \
   ln -s /usr/lib/go-1.23/bin/go /usr/bin/go && \

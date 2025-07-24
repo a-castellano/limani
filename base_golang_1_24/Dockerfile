@@ -14,15 +14,15 @@ RUN \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
   dh-golang \
   golang-golang-x-sys-dev \
-  golang-1.24=1.24.3-1longsleep1+focal \
-  golang-1.24-go=1.24.3-1longsleep1+focal \
+  golang-1.24=1.24.5-1longsleep1+focal \
+  golang-1.24-go=1.24.5-1longsleep1+focal \
   make=4.3-4.1build2 \
   git \
   ca-certificates \
   openssl=3.0.13-0ubuntu3.5 \
   clang=1:18.0-59~exp2 \
-  sudo=1.9.15p5-3ubuntu5 \
-  nfpm=2.42.1 \
+  sudo=1.9.15p5-3ubuntu5.24.04.1 \
+  nfpm=2.43.0 \
   bind9-host=1:9.18.30-0ubuntu0.24.04.2 \
   --no-install-recommends && \
   ln -s /usr/lib/go-1.24/bin/go /usr/bin/go && \

@@ -10,7 +10,7 @@ RUN \
  shunit2=2.1.8-4 \
  make=4.3-4.1build2 \
  ruby=1:3.2~ubuntu1 \
- sudo=1.9.15p5-3ubuntu5 \
+ sudo=1.9.15p5-3ubuntu5.24.04.1 \
  shfmt=3.8.0-1 \
  --no-install-recommends && \
  gem install bashcov --version 3.0.3 && \

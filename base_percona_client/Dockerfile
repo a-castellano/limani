@@ -5,7 +5,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 RUN \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- percona-server-client=8.4.4-4-1.noble \
+ percona-server-client=8.4.5-5-1.noble \
  daedalus-project-mysql-utils=0.4-7 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
