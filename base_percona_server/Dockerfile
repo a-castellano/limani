@@ -4,6 +4,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
 
 RUN \
  export PERCONA_TELEMETRY_DISABLE=1 && \
+ export DEBIAN_FRONTEND=noninteractive && \
  echo percona-server-server percona-server-server/root-pass password L3tm3_in | debconf-set-selections && \
  echo percona-server-server percona-server-server/re-root-pass password L3tm3_in | debconf-set-selections && \
  echo percona-server-server percona-server-server/default-auth-override select 1 | debconf-set-selections && \
