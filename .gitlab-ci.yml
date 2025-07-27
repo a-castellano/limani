@@ -53,10 +53,10 @@ build_base_perl_utils_image:
   dependencies:
     - build_base_image
 
-build_base_redis_server_image:
+build_base_valkey_server_image:
   stage: build_base_inherited_images
   script:
-    - export IMAGE_NAME=base_redis_server
+    - export IMAGE_NAME=base_valkey_server
     - export IS_BASE_IMAGE=0
     - docker-build
   dependencies:
