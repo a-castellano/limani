@@ -1,7 +1,7 @@
 # base_caddy
 
-This image is based on [base image](/base) comes with caddy installed.
+This image is based on [base image](/base) and comes with caddy installed.
 
 Packages installed:
 
-- caddy
+ * caddy (2.10.0)
