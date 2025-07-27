@@ -6,5 +6,5 @@ This image is based on [base image](/base) and comes with cron and logrotate ins
 
 Packages installed:
 
- * cron (3.0pl1-136ubuntu1)
- * logrotate (3.14.0-4ubuntu3)
+ * cron (3.0pl1-184ubuntu2)
+ * logrotate (3.21.0-2build1)
