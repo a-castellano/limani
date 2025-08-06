@@ -31,6 +31,7 @@ Docker manifests of images used by one or more of my personal projects.
 * [base_percona_server](/base_percona_server): base image with Percona server (8.4.5-5-1.noble) with default password 'L3tm3_in' and port 3306 exposed.
 * [base_logrotate](/base_logrotate): base image with cron (3.0pl1-184ubuntu2) and logrotate (3.21.0-2build1).
 * [base_caddy](/base_caddy): base image with Caddy web server (2.10.0).
+* [base_stunnel](/base_stunnel): base image with stunnel4 SSL/TLS tunneling service and self-signed certificate.
 
 ### Packaging
 
