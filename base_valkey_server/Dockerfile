@@ -1,6 +1,6 @@
 ARG BASE_IMAGE=registry.windmaker.net:5005/a-castellano/limani/base
 FROM $BASE_IMAGE
-MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
+MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
 RUN \
  apt-get update -qq && \

@@ -1,6 +1,6 @@
 ARG BASE_IMAGE=registry.windmaker.net:5005/a-castellano/limani/base
 FROM $BASE_IMAGE
-MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
+MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
 COPY base_rabbitmq_server/files/rabbitmq.conf /tmp/rabbitmq.conf
 COPY base_rabbitmq_server/files/enabled_plugins /tmp/enabled_plugins
