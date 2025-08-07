@@ -1,5 +1,5 @@
 FROM ubuntu:noble
-MAINTAINER Álvaro Castellano Vela <alvaro.castellano.vela@gmail.com>
+MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
 RUN \
  apt-get update -qq && \
