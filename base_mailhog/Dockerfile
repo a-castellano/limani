@@ -1,9 +1,8 @@
-ARG BASE_IMAGE=registry.windmaker.net:5005/a-castellano/limani/base
+ARG BASE_IMAGE=registry.windmaker.net:5005/a-castellano/limani/base_golang_1_24
 FROM $BASE_IMAGE
-
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
-COPY base_stunnel/run_stunnel.sh /usr/local/bin/
+COPY base_stunnel/run_mailhog_and_stunnel.sh /usr/local/bin/
 
 RUN \
   apt-get update -qq && \
@@ -11,7 +10,8 @@ RUN \
   apt-get purge -y --auto-remove && \
   rm -rf /var/lib/apt/lists/* && \
   openssl req -new -x509 -days 3650 -nodes  -subj "/C=ES/ST=Castellón/L=Castelló de la Plana/O=Windmaker/OU=IT/CN=mail.windmaker.net/emailAddress=alvaro@windmaker.net" -out /etc/stunnel/stunnel.pem -keyout /etc/stunnel/stunnel.pem && \
-  chmod +x /usr/local/bin/run_stunnel.sh
+  go install github.com/mailhog/MailHog@v1.0.1 && \
+  chmod +x /usr/local/bin/run_mailhog_and_stunnel.sh
 
-CMD ["/usr/local/bin/run_stunnel.sh"]
+CMD ["/usr/local/bin/run_mailhog_and_stunnel.sh"]
 
