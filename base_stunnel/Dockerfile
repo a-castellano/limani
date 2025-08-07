@@ -3,7 +3,7 @@ FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
-COPY run_stunnel.sh /usr/local/bin/
+COPY base_stunnel/run_stunnel.sh /usr/local/bin/
 
 RUN \
   apt-get update -qq && \
