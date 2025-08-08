@@ -2,7 +2,7 @@ ARG BASE_IMAGE=registry.windmaker.net:5005/a-castellano/limani/base_golang_1_24
 FROM $BASE_IMAGE
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
-COPY base_stunnel/run_mailhog_and_stunnel.sh /usr/local/bin/
+COPY base_mailhog/run_mailhog_and_stunnel.sh /usr/local/bin/
 
 RUN \
   apt-get update -qq && \
