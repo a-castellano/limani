@@ -19,18 +19,6 @@ if [ -z "${STUNNEL_ACCEPT:-}" ]; then
     exit 1
 fi
 
-if [ -z "${STUNNEL_CONNECT:-}" ]; then
-    echo "ERROR: STUNNEL_CONNECT variable not defined" >&2
-    echo "Usage: Set STUNNEL_CONNECT to the target host:port (e.g., 127.0.0.1:8080)" >&2
-    exit 1
-fi
-
-if [ -z "${STUNNEL_PROTO:-}" ]; then
-    echo "ERROR: STUNNEL_PROTO variable not defined" >&2
-    echo "Usage: Set STUNNEL_PROTO to the protocol (e.g., https)" >&2
-    exit 1
-fi
-
 echo "INFO: Generating stunnel configuration for service: ${STUNNEL_SERVICE}"
 
 # Generate stunnel configuration file
@@ -39,18 +27,19 @@ cat <<EOF > /etc/stunnel/stunnel.conf
 foreground = yes
 
 [${STUNNEL_SERVICE}]
-protocol = ${STUNNEL_PROTO}
+protocol = smtp
 accept = 0.0.0.0:${STUNNEL_ACCEPT}
-connect = ${STUNNEL_CONNECT}
+connect = 127.0.1:1025
 cert = /etc/stunnel/stunnel.pem
 key = /etc/stunnel/stunnel.pem
 EOF
 
 echo "INFO: Starting stunnel with configuration:"
 echo "  Service: ${STUNNEL_SERVICE}"
-echo "  Protocol: ${STUNNEL_PROTO}"
 echo "  Accept: 0.0.0.0:${STUNNEL_ACCEPT}"
-echo "  Connect: ${STUNNEL_CONNECT}"
+
+# Run mailhog in the background
+/root/go/bin/MailHog &
 
 # Start stunnel with the generated configuration
 exec stunnel /etc/stunnel/stunnel.conf
