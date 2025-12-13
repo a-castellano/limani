@@ -6,7 +6,7 @@ This image is based on [base image](/base) and comes with percona-server-server 
 
 Packages installed:
 
- * percona-server-server (8.4.5-5-1.noble)
+ * percona-server-server (8.4.6-6-1.noble)
  * daedalus-project-mysql-utils (0.4-7)
  * percona-telemetry-agent
 
