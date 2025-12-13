@@ -1,4 +1,4 @@
-image: registry.windmaker.net:5005/a-castellano/limani/base_docker:latest
+image: limani.windmaker.net/limani/base_docker:former_image
 
 stages:
   - build_base
@@ -16,7 +16,6 @@ build_base_image:
     paths:
       - timestamp
     expire_in: 240 minutes
-
 build_base_git_image:
   stage: build_base_inherited_images
   script:
@@ -25,7 +24,6 @@ build_base_git_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_xml_utils_image:
   stage: build_base_inherited_images
   script:
@@ -34,7 +32,6 @@ build_base_xml_utils_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_bash_utils_image:
   stage: build_base_inherited_images
   script:
@@ -43,7 +40,6 @@ build_base_bash_utils_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_perl_utils_image:
   stage: build_base_inherited_images
   script:
@@ -52,7 +48,6 @@ build_base_perl_utils_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_valkey_server_image:
   stage: build_base_inherited_images
   script:
@@ -61,7 +56,6 @@ build_base_valkey_server_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_rabbitmq_server_image:
   stage: build_base_inherited_images
   script:
@@ -70,7 +64,6 @@ build_base_rabbitmq_server_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_deb_builder_image:
   stage: build_base_inherited_images
   script:
@@ -79,19 +72,6 @@ build_base_deb_builder_image:
     - docker-build
   dependencies:
     - build_base_image
-
-build_base_golang_1_23_image:
-  stage: build_base_inherited_images_2nd_gen
-  script:
-    - export IMAGE_NAME=base_golang_1_23
-    - export IS_BASE_IMAGE=0
-    - docker-build
-  artifacts:
-    paths:
-      - timestamp
-  dependencies:
-    - build_base_image
-
 build_base_golang_1_24_image:
   stage: build_base_inherited_images_2nd_gen
   script:
@@ -103,7 +83,6 @@ build_base_golang_1_24_image:
       - timestamp
   dependencies:
     - build_base_image
-
 build_base_curl_image:
   stage: build_base_inherited_images
   script:
@@ -112,7 +91,6 @@ build_base_curl_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_caddy_image:
   stage: build_base_inherited_images
   script:
@@ -121,7 +99,6 @@ build_base_caddy_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_deb_perl_builder_image:
   stage: build_base_inherited_images_2nd_gen
   script:
@@ -131,7 +108,6 @@ build_base_deb_perl_builder_image:
   dependencies:
     - build_base_image
     - build_base_deb_builder_image
-
 build_base_deb_c_builder_image:
   stage: build_base_inherited_images_2nd_gen
   script:
@@ -141,7 +117,6 @@ build_base_deb_c_builder_image:
   dependencies:
     - build_base_image
     - build_base_deb_builder_image
-
 build_base_hugo_image:
   stage: build_base_inherited_images_3rd_gen
   script:
@@ -151,7 +126,6 @@ build_base_hugo_image:
   dependencies:
     - build_base_image
     - build_base_golang_1_24_image
-
 build_base_mailhog_image:
   stage: build_base_inherited_images_3rd_gen
   script:
@@ -161,7 +135,6 @@ build_base_mailhog_image:
   dependencies:
     - build_base_image
     - build_base_golang_1_24_image
-
 build_base_deb_python3_builder_image:
   stage: build_base_inherited_images_2nd_gen
   script:
@@ -171,7 +144,6 @@ build_base_deb_python3_builder_image:
   dependencies:
     - build_base_image
     - build_base_deb_builder_image
-
 build_base_percona_server_image:
   stage: build_base_inherited_images
   script:
@@ -207,7 +179,6 @@ build_base_openssl_image:
     - docker-build
   dependencies:
     - build_base_image
-
 build_base_logrotate:
   stage: build_base_inherited_images
   script:

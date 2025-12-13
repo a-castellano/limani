@@ -6,6 +6,6 @@ This image is based on [base_golang_1_24 image](/base_golang_1_24) and comes wit
 
 Packages installed:
 
- * hugo (0.148.1)
+ * hugo (0.152.2)
  * rsync
  * openssh-client
