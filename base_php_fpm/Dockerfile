@@ -29,4 +29,4 @@ RUN \
 
 EXPOSE 9000
 
-CMD ["php-fpm8.3", "-F"]
+CMD ["php-fpm8.3", "-F", "--allow-to-run-as-root"]
