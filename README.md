@@ -31,6 +31,8 @@ Docker manifests of images used by one or more of my personal projects.
 - [base_percona_server](/base_percona_server): base image with Percona server (8.4.7-7-1.noble) with default password 'L3tm3_in' and port 3306 exposed.
 - [base_logrotate](/base_logrotate): base image with cron (3.0pl1-184ubuntu2) and logrotate (3.21.0-2build1).
 - [base_caddy](/base_caddy): base image with Caddy web server (2.10.0).
+- [base_nginx](/base_nginx): base image with nginx web server (1.24.0-2ubuntu7.5) with ports 80 and 443 exposed.
+- [base_php_fpm](/base_php_fpm): base image with PHP 8.3 FPM (8.3.6-0ubuntu0.24.04.6) and common extensions with port 9000 exposed.
 - [base_mailhog](/base_mailhog): base image with MailHog email testing tool (v1.0.1) and stunnel4 SSL/TLS tunneling service.
 
 ### Packaging
