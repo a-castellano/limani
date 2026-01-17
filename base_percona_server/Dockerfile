@@ -10,7 +10,7 @@ RUN \
  echo percona-server-server percona-server-server/default-auth-override select 1 | debconf-set-selections && \
  apt-get update -qq && \
  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
- percona-server-server=8.4.6-6-1.noble \
+ percona-server-server=8.4.7-7-1.noble \
  daedalus-project-mysql-utils=0.4-7 \
  percona-telemetry-agent \
  --no-install-recommends && \
