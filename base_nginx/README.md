@@ -4,7 +4,7 @@ This image is based on [base image](/base) and comes with nginx installed.
 
 Packages installed:
 
- * nginx-full (1.24.0-2ubuntu7.5)
+ * nginx-full (1.24.0-2ubuntu7.6)
 
 Additional features:
 
