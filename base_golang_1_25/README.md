@@ -6,19 +6,20 @@ This image is based on [base_deb_builder image](/base_deb_builder) and comes wit
 
 Packages installed:
 
- * dh-golang
- * golang-golang-x-sys-dev
- * golang-1.25 (1.25.5-1longsleep1+focal)
- * golang-1.25-go (1.25.5-1longsleep1+focal)
- * make (4.3-4.1build2)
- * git
- * ca-certificates
- * openssl (3.0.13-0ubuntu3.7)
- * clang (1:18.0-59~exp2)
- * sudo (1.9.15p5-3ubuntu5.24.04.1)
- * nfpm (2.43.0)
- * bind9-host (1:9.18.39-0ubuntu0.24.04.2)
+- dh-golang
+- golang-golang-x-sys-dev
+- golang-1.25 (1.25.7-1longsleep1+focal)
+- golang-1.25-go (1.25.7-1longsleep1+focal)
+- make (4.3-4.1build2)
+- git
+- ca-certificates
+- openssl (3.0.13-0ubuntu3.7)
+- clang (1:18.0-59~exp2)
+- sudo (1.9.15p5-3ubuntu5.24.04.1)
+- nfpm (2.43.0)
+- bind9-host (1:9.18.39-0ubuntu0.24.04.2)
 
 Additional features:
- * Creates a symlink from `/usr/lib/go-1.25/bin/go` to `/usr/bin/go`
- * Configures DEBEMAIL and DEBFULLNAME environment variables
+
+- Creates a symlink from `/usr/lib/go-1.25/bin/go` to `/usr/bin/go`
+- Configures DEBEMAIL and DEBFULLNAME environment variables

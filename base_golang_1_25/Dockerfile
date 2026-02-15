@@ -14,8 +14,8 @@ RUN \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
   dh-golang \
   golang-golang-x-sys-dev \
-  golang-1.25=1.25.5-1longsleep1+focal \
-  golang-1.25-go=1.25.5-1longsleep1+focal \
+  golang-1.25=1.25.7-1longsleep1+focal \
+  golang-1.25-go=1.25.7-1longsleep1+focal \
   make=4.3-4.1build2 \
   git \
   ca-certificates \
