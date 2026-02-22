@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=limani.windmaker.net/limani/base_golang_1_24
+ARG BASE_IMAGE=limani.windmaker.net/limani/base_golang_1_26
 FROM $BASE_IMAGE
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 

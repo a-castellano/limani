@@ -72,21 +72,10 @@ build_base_deb_builder_image:
     - docker-build
   dependencies:
     - build_base_image
-build_base_golang_1_24_image:
+build_base_golang_1_26_image:
   stage: build_base_inherited_images_2nd_gen
   script:
-    - export IMAGE_NAME=base_golang_1_24
-    - export IS_BASE_IMAGE=0
-    - docker-build
-  artifacts:
-    paths:
-      - timestamp
-  dependencies:
-    - build_base_image
-build_base_golang_1_25_image:
-  stage: build_base_inherited_images_2nd_gen
-  script:
-    - export IMAGE_NAME=base_golang_1_25
+    - export IMAGE_NAME=base_golang_1_26
     - export IS_BASE_IMAGE=0
     - docker-build
   artifacts:
@@ -152,7 +141,7 @@ build_base_hugo_image:
     - docker-build
   dependencies:
     - build_base_image
-    - build_base_golang_1_25_image
+    - build_base_golang_1_26_image
 build_base_mailhog_image:
   stage: build_base_inherited_images_3rd_gen
   script:
@@ -161,7 +150,7 @@ build_base_mailhog_image:
     - docker-build
   dependencies:
     - build_base_image
-    - build_base_golang_1_25_image
+    - build_base_golang_1_26_image
 build_base_deb_python3_builder_image:
   stage: build_base_inherited_images_2nd_gen
   script:

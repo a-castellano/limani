@@ -1,6 +1,6 @@
 # base_mailhog
 
-This image is based on [base_golang_1_24](/base_golang_1_24) and comes with MailHog and stunnel installed.
+This image is based on [base_golang_1_26](/base_golang_1_26) and comes with MailHog and stunnel installed.
 
 Packages installed:
 

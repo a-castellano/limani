@@ -14,8 +14,8 @@ RUN \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
   dh-golang \
   golang-golang-x-sys-dev \
-  golang-1.25=1.25.7-1longsleep1+focal \
-  golang-1.25-go=1.25.7-1longsleep1+focal \
+  golang-1.26=1.26.0-1longsleep1+jammy \
+  golang-1.26-go=1.26.0-1longsleep1+jammy \
   make=4.3-4.1build2 \
   git \
   ca-certificates \
@@ -25,7 +25,7 @@ RUN \
   nfpm=2.43.0 \
   bind9-host=1:9.18.39-0ubuntu0.24.04.2 \
   --no-install-recommends && \
-  ln -s /usr/lib/go-1.25/bin/go /usr/bin/go && \
+  ln -s /usr/lib/go-1.26/bin/go /usr/bin/go && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
   apt-get autoclean -qq -o=Dpkg::Use-Pty=0 -y && \
