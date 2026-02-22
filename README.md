@@ -60,4 +60,4 @@ The project uses GitLab CI/CD with a multi-stage build process:
 3. **build_base_inherited_images_2nd_gen**: Second generation images
 4. **build_base_inherited_images_3rd_gen**: Third generation images
 
-Images are published to `limani.windmaker.net/limani/` with the latest tag.
+Images are published to `harbor.windmaker.net/limani/` with the latest tag.

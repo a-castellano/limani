@@ -38,7 +38,7 @@ Additional features:
 ```bash
 docker run -d \
   -p 9000:9000 \
-  limani.windmaker.net/limani/base_php_fpm:latest
+  harbor.windmaker.net/limani/base_php_fpm:latest
 ```
 
 ### With Custom PHP Configuration
@@ -50,7 +50,7 @@ docker run -d \
   -p 9000:9000 \
   -v /path/to/php.ini:/etc/php/8.3/fpm/php.ini:ro \
   -v /path/to/www.conf:/etc/php/8.3/fpm/pool.d/www.conf:ro \
-  limani.windmaker.net/limani/base_php_fpm:latest
+  harbor.windmaker.net/limani/base_php_fpm:latest
 ```
 
 ### With Nginx (using base_nginx)
@@ -60,7 +60,7 @@ docker run -d \
 docker run -d \
   --name php-fpm \
   -v /path/to/php:/var/www/html:ro \
-  limani.windmaker.net/limani/base_php_fpm:latest
+  harbor.windmaker.net/limani/base_php_fpm:latest
 
 # Run Nginx and connect to PHP-FPM
 docker run -d \
@@ -69,7 +69,7 @@ docker run -d \
   -v /path/to/nginx.conf:/etc/nginx/nginx.conf:ro \
   -v /path/to/php:/usr/share/nginx/html:ro \
   --link php-fpm:php-fpm \
-  limani.windmaker.net/limani/base_nginx:latest
+  harbor.windmaker.net/limani/base_nginx:latest
 ```
 
 ## Ports

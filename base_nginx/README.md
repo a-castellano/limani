@@ -21,7 +21,7 @@ Additional features:
 docker run -d \
   -p 80:80 \
   -p 443:443 \
-  limani.windmaker.net/limani/base_nginx:latest
+  harbor.windmaker.net/limani/base_nginx:latest
 ```
 
 ### With Custom Configuration
@@ -34,7 +34,7 @@ docker run -d \
   -p 443:443 \
   -v /path/to/nginx.conf:/etc/nginx/nginx.conf:ro \
   -v /path/to/html:/usr/share/nginx/html:ro \
-  limani.windmaker.net/limani/base_nginx:latest
+  harbor.windmaker.net/limani/base_nginx:latest
 ```
 
 ### With Custom Site Configuration
@@ -45,7 +45,7 @@ docker run -d \
   -p 443:443 \
   -v /path/to/default:/etc/nginx/sites-available/default:ro \
   -v /path/to/html:/usr/share/nginx/html:ro \
-  limani.windmaker.net/limani/base_nginx:latest
+  harbor.windmaker.net/limani/base_nginx:latest
 ```
 
 ## Ports
