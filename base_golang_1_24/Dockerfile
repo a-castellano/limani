@@ -19,7 +19,7 @@ RUN \
   make=4.3-4.1build2 \
   git \
   ca-certificates \
-  openssl=3.0.13-0ubuntu3.6 \
+  openssl=3.0.13-0ubuntu3.7 \
   clang=1:18.0-59~exp2 \
   sudo=1.9.15p5-3ubuntu5.24.04.1 \
   nfpm=2.43.0 \

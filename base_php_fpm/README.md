@@ -23,7 +23,7 @@ Packages installed:
 - php8.3-xml (8.3.6-0ubuntu0.24.04.6)
 - php8.3-zip (8.3.6-0ubuntu0.24.04.6)
 - ca-certificates (20240203)
-- openssl (openssl=3.0.13-0ubuntu3.6)
+- openssl (3.0.13-0ubuntu3.7)
 
 Additional features:
 

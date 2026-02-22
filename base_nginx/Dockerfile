@@ -5,7 +5,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
 RUN \
   apt-get update -qq && \
-  apt-get install -qq -o=Dpkg::Use-Pty=0 -y nginx-full=1.24.0-2ubuntu7.5 --no-install-recommends && \
+  apt-get install -qq -o=Dpkg::Use-Pty=0 -y nginx-full=1.24.0-2ubuntu7.6 --no-install-recommends && \
   apt-get purge -y --auto-remove && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/nginx/* && \
