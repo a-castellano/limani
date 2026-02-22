@@ -1,6 +1,6 @@
 # base_mailhog
 
-This image is based on [base_golang_1_24](/base_golang_1_24) and comes with MailHog and stunnel installed.
+This image is based on [base_golang_1_26](/base_golang_1_26) and comes with MailHog and stunnel installed.
 
 Packages installed:
 
@@ -41,7 +41,7 @@ docker run -d \
   -p 8443:8443 \
   -p 1025:1025 \
   -p 8025:8025 \
-  limani.windmaker.net/limani/base_mailhog:latest
+  harbor.windmaker.net/limani/base_mailhog:latest
 ```
 
 This will:

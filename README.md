@@ -13,7 +13,7 @@ Docker manifests of images used by one or more of my personal projects.
 ### Utilities
 
 - [base_curl](/base_curl): base image with curl (8.5.0-2ubuntu10.6).
-- [base_hugo](/base_hugo): base image with [Hugo](https://gohugo.io/) (0.152.2), rsync, and openssh-client.
+- [base_hugo](/base_hugo): base image with [Hugo](https://gohugo.io/) (0.156.0), rsync, and openssh-client.
 - [base_xml_utils](/base_xml_utils): base image containing XML utils (libxml2-utils, xmlstarlet).
 - [base_bash_utils](/base_bash_utils): base image containing bash development utils (shellcheck, shunit2, make, shfmt, bashcov) with non-root user 'ventus'.
 - [base_perl_utils](/base_perl_utils): base image containing perl development utils (libtest-perl-critic-perl) with non-root user 'ventus'.
@@ -21,8 +21,7 @@ Docker manifests of images used by one or more of my personal projects.
 - [base_docker](/base_docker): base image with Docker utils installed (docker-ce, docker-ce-cli, containerd.io, docker-build).
 - [base_git](/base_git): base image with git and ca-certificates installed.
 - [base_openssl](/base_openssl): base image with openssl (3.0.13-0ubuntu3.7) installed.
-- [base_golang_1_24](/base_golang_1_24): base image containing golang 1.24 (1.24.7-1longsleep1+focal) and packaging utils.
-- [base_golang_1_25](/base_golang_1_25): base image containing golang 1.25 (1.25.7-1longsleep1+focal) and packaging utils.
+- [base_golang_1_26](/base_golang_1_26): base image containing golang 1.26 (1.26.0-1longsleep1+jammy) and packaging utils.
 
 ### Services
 
@@ -61,4 +60,4 @@ The project uses GitLab CI/CD with a multi-stage build process:
 3. **build_base_inherited_images_2nd_gen**: Second generation images
 4. **build_base_inherited_images_3rd_gen**: Third generation images
 
-Images are published to `limani.windmaker.net/limani/` with the latest tag.
+Images are published to `harbor.windmaker.net/limani/` with the latest tag.

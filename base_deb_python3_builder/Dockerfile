@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=limani.windmaker.net/limani/base_deb_builder
+ARG BASE_IMAGE=harbor.windmaker.net/limani/base_deb_builder
 FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
