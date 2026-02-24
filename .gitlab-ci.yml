@@ -1,4 +1,4 @@
-image: limani.windmaker.net/limani/base_docker:latest
+image: harbor.windmaker.net/limani/base_docker:latest
 
 stages:
   - build_base

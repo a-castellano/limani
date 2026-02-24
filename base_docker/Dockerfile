@@ -10,6 +10,7 @@ RUN \
  docker-ce-cli=5:28.3.2-1~ubuntu.24.04~noble \
  containerd.io=1.7.27-1 \
  docker-build=0.4-1 \
+ git-crypt=0.7.0-0.1build3 \
  --no-install-recommends && \
  apt-get purge -y --auto-remove && \
  rm -rf /var/lib/apt/lists/*
