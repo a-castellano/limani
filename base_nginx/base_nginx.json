@@ -1,0 +1,52 @@
+{
+  "name": "base_nginx",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "nginx-full",
+      "version": "1.24.0-2ubuntu7.6"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20240203"
+    },
+    {
+      "name": "openssl",
+      "version": "3.0.13-0ubuntu3.7"
+    }
+  ],
+  "exposed_ports": [
+    80,
+    443
+  ],
+  "command": [
+    "nginx",
+    "-g",
+    "daemon off;"
+  ],
+  "extra_commands": [
+    "rm -rf /var/cache/nginx/*",
+    "ln -sf /dev/stdout /var/log/nginx/access.log",
+    "ln -sf /dev/stderr /var/log/nginx/error.log"
+  ],
+  "readme": {
+    "description": "This image is based on base and comes with nginx installed.",
+    "additional_features": [
+      "Exposes ports 80 (HTTP) and 443 (HTTPS)",
+      "Logs redirected to stdout/stderr for Docker logging",
+      "Runs nginx in foreground mode (daemon off)",
+      "Nginx cache directories cleaned during build",
+      "Basic usage: docker run -d -p 80:80 -p 443:443 harbor.windmaker.net/limani/base_nginx:latest",
+      "With custom config: mount nginx.conf to /etc/nginx/nginx.conf and html to /usr/share/nginx/html",
+      "With custom site: mount default to /etc/nginx/sites-available/default and html to /usr/share/nginx/html",
+      "Ports: 80 HTTP, 443 HTTPS",
+      "Default nginx config at /etc/nginx/nginx.conf; override by mounting custom config",
+      "Default web root at /usr/share/nginx/html"
+    ]
+  }
+}

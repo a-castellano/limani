@@ -1,0 +1,40 @@
+{
+  "name": "base_deb_builder",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "debhelper",
+      "version": "13.14.1ubuntu5"
+    },
+    {
+      "name": "fakeroot",
+      "version": "1.33-1"
+    },
+    {
+      "name": "build-essential",
+      "version": "12.10ubuntu1"
+    },
+    {
+      "name": "libdebhelper-perl",
+      "version": "13.14.1ubuntu5"
+    },
+    {
+      "name": "dpkg-dev",
+      "version": "1.22.6ubuntu6.5"
+    }
+  ],
+  "extra_commands": [
+    "echo -e \"DEBEMAIL=\\\"alvaro@windmaker.net\\\"\\nDEBFULLNAME=\\\"Álvaro Castellano Vela\\\"\\nexport DEBEMAIL DEBFULLNAME\\n\" >> ~/.bashrc.backup"
+  ],
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with Debian packaging utilities.",
+    "additional_features": [
+      "Configures DEBEMAIL and DEBFULLNAME environment variables"
+    ]
+  }
+}

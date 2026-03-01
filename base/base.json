@@ -1,0 +1,33 @@
+{
+  "name": "base",
+  "base_image": "ubuntu:noble",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "required_repositories": {
+    "name": "windmaker",
+    "apt_lines": [
+      "deb [signed-by=/etc/apt/keyrings/windmaker.gpg] http://packages.windmaker.net/ any main",
+      "deb [arch=amd64 signed-by=/etc/apt/keyrings/windmaker.gpg] http://packages.windmaker.net/ noble main"
+    ],
+    "gpg_keyring": {
+      "name": "windmaker",
+      "content": {
+        "type": "url",
+        "data": [
+          "http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub"
+        ]
+      }
+    }
+  },
+  "readme": {
+    "description": "This image is based on Ubuntu noble image, only Windmaker repos are added.",
+    "additional_features": [
+      "Adds repo `http://packages.windmaker.net/ any main`",
+      "Adds repo `http://packages.windmaker.net/ noble main`"
+    ]
+  },
+  "packages": []
+}

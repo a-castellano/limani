@@ -1,0 +1,44 @@
+{
+  "name": "base_deb_perl_builder",
+  "base_image": "harbor.windmaker.net/limani/base_deb_builder",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "libmodule-build-tiny-perl",
+      "version": "0.047-1"
+    },
+    {
+      "name": "libmodule-install-perl",
+      "version": "1.21-1"
+    },
+    {
+      "name": "libmodule-build-perl",
+      "version": "0.423400-2"
+    },
+    {
+      "name": "dh-make-perl",
+      "version": "0.124"
+    },
+    {
+      "name": "libgit-wrapper-perl",
+      "version": "0.048-2"
+    },
+    {
+      "name": "libcatalyst-modules-perl",
+      "version": "49"
+    }
+  ],
+  "extra_commands": [
+    "echo -e \"DEBEMAIL=\\\"alvaro@windmaker.net\\\"\\nDEBFULLNAME=\\\"Álvaro Castellano Vela\\\"\\nexport DEBEMAIL DEBFULLNAME\\n\" >> ~/.bashrc.backup"
+  ],
+  "readme": {
+    "description": "This image is based on [base_deb_builder image](/base_deb_builder) and comes with Debian packaging utilities (perl flavour).",
+    "additional_features": [
+      "Configures DEBEMAIL and DEBFULLNAME environment variables"
+    ]
+  }
+}

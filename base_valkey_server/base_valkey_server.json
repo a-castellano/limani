@@ -1,0 +1,30 @@
+{
+  "name": "base_valkey_server",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "valkey-server",
+      "version": "7.2.11+dfsg1-0ubuntu0.2"
+    }
+  ],
+  "exposed_ports": [
+    6379
+  ],
+  "command": [
+    "valkey-server",
+    "--protected-mode",
+    "no"
+  ],
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with valkey-server installed.",
+    "additional_features": [
+      "Exposes port 6379.",
+      "Runs valkey-server with `--protected-mode no` by default."
+    ]
+  }
+}

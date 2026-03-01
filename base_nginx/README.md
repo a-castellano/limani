@@ -1,60 +1,23 @@
 # base_nginx
 
-This image is based on [base image](/base) and comes with nginx installed.
+[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://harbor.windmaker.net/harbor/projects/2/repositories/base_nginx)
+
+This image is based on base and comes with nginx installed.
+
 
 Packages installed:
-
- * nginx-full (1.24.0-2ubuntu7.6)
+- nginx-full (1.24.0-2ubuntu7.6)
+- ca-certificates (20240203)
+- openssl (3.0.13-0ubuntu3.7)
 
 Additional features:
-
- * Exposes ports 80 (HTTP) and 443 (HTTPS)
- * Logs are redirected to stdout/stderr for Docker logging
- * Runs nginx in foreground mode (daemon off)
- * Nginx cache directories are cleaned during build
-
-## Usage
-
-### Basic Usage
-
-```bash
-docker run -d \
-  -p 80:80 \
-  -p 443:443 \
-  harbor.windmaker.net/limani/base_nginx:latest
-```
-
-### With Custom Configuration
-
-You can mount your own nginx configuration:
-
-```bash
-docker run -d \
-  -p 80:80 \
-  -p 443:443 \
-  -v /path/to/nginx.conf:/etc/nginx/nginx.conf:ro \
-  -v /path/to/html:/usr/share/nginx/html:ro \
-  harbor.windmaker.net/limani/base_nginx:latest
-```
-
-### With Custom Site Configuration
-
-```bash
-docker run -d \
-  -p 80:80 \
-  -p 443:443 \
-  -v /path/to/default:/etc/nginx/sites-available/default:ro \
-  -v /path/to/html:/usr/share/nginx/html:ro \
-  harbor.windmaker.net/limani/base_nginx:latest
-```
-
-## Ports
-
-- **80**: HTTP port
-- **443**: HTTPS port
-
-## Configuration
-
-The default nginx configuration is located at `/etc/nginx/nginx.conf`. You can override it by mounting a custom configuration file.
-
-The default web root is `/usr/share/nginx/html`.
+- Exposes ports 80 (HTTP) and 443 (HTTPS)
+- Logs redirected to stdout/stderr for Docker logging
+- Runs nginx in foreground mode (daemon off)
+- Nginx cache directories cleaned during build
+- Basic usage: docker run -d -p 80:80 -p 443:443 harbor.windmaker.net/limani/base_nginx:latest
+- With custom config: mount nginx.conf to /etc/nginx/nginx.conf and html to /usr/share/nginx/html
+- With custom site: mount default to /etc/nginx/sites-available/default and html to /usr/share/nginx/html
+- Ports: 80 HTTP, 443 HTTPS
+- Default nginx config at /etc/nginx/nginx.conf; override by mounting custom config
+- Default web root at /usr/share/nginx/html

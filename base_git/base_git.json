@@ -1,0 +1,29 @@
+{
+  "name": "base_git",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "git",
+      "version": "1:2.43.0-1ubuntu7.3"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20240203"
+    },
+    {
+      "name": "openssl",
+      "version": "3.0.13-0ubuntu3.7"
+    }
+  ],
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with git installed.",
+    "additional_features": [
+      "ca-certificates is required for secure connections."
+    ]
+  }
+}

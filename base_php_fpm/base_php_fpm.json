@@ -1,0 +1,110 @@
+{
+  "name": "base_php_fpm",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "php8.3-cli",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-curl",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-gmp",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-bcmath",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-zip",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-mysql",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-imagick",
+      "version": "3.7.0-4ubuntu3"
+    },
+    {
+      "name": "php8.3-xml",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-gd",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-mbstring",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-opcache",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-igbinary",
+      "version": "3.2.13-1ubuntu3"
+    },
+    {
+      "name": "php8.3-bz2",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-fpm",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-intl",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-pgsql",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "php8.3-redis",
+      "version": "5.3.7+4.3.0-3ubuntu1"
+    },
+    {
+      "name": "php8.3-readline",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20240203"
+    },
+    {
+      "name": "openssl",
+      "version": "3.0.13-0ubuntu3.7"
+    },
+    {
+      "name": "php8.3-common",
+      "version": "8.3.6-0ubuntu0.24.04.6"
+    }
+  ],
+  "exposed_ports": [
+    9000
+  ],
+  "command": [
+    "php-fpm8.3",
+    "-F",
+    "--allow-to-run-as-root"
+  ],
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with PHP 8.3 FPM and various extensions installed.",
+    "additional_features": [
+      "Port 9000 exposed",
+      "The default PHP-FPM configuration is located at `/etc/php/8.3/fpm/php-fpm.conf`. The pool configuration is at `/etc/php/8.3/fpm/pool.d/www.conf`."
+    ]
+  }
+}

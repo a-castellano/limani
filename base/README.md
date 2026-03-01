@@ -1,10 +1,14 @@
 # base
 
-[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://git.windmaker.net/a-castellano/limani/container_registry/2)
+[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://harbor.windmaker.net/harbor/projects/2/repositories/base)
 
-This image is based on Ubuntu noble image and uses Daedalus Project and Windmaker repos.
+This image is based on Ubuntu noble image, only Windmaker repos are added.
 
-```
-deb http://packages.windmaker.net/ any main
-deb [arch=amd64] http://packages.windmaker.net/ noble main
-```
+
+Packages installed:
+
+Additional features:
+
+- Adds repo `http://packages.windmaker.net/ any main`
+- Adds repo `http://packages.windmaker.net/ noble main`
+

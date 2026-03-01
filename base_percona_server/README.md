@@ -1,19 +1,16 @@
 # base_percona_server
 
-[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://hub.docker.com/r/daedalusproject/base_percona_server)
+[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://harbor.windmaker.net/harbor/projects/2/repositories/base_percona_server)
 
-This image is based on [base image](/base) and comes with percona-server-server installed.
+Percona Server (MySQL) image based on Limani base. Root password and auth plugin configured via debconf.
+
 
 Packages installed:
-
- * percona-server-server (8.4.7-7-1.noble)
- * daedalus-project-mysql-utils (0.4-7)
- * percona-telemetry-agent
+- percona-telemetry-agent (1.0.7-1.noble)
+- daedalus-project-mysql-utils (0.4-7)
+- percona-server-server (8.4.7-7-1.noble)
 
 Additional features:
- * Default root password is *L3tm3_in*
- * Runs as user 'mysql'
- * Exposes port 3306
- * Binds to all interfaces (0.0.0.0)
- * Disables name resolution
- * Disables Percona telemetry
+- Port 3306 exposed
+- Runs as mysql user
+- Telemetry disabled via build env

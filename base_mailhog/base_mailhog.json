@@ -1,0 +1,52 @@
+{
+  "name": "base_mailhog",
+  "base_image": "harbor.windmaker.net/limani/base_golang_1_26",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "stunnel4",
+      "version": "3:5.72-1build2"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20240203"
+    },
+    {
+      "name": "openssl",
+      "version": "3.0.13-0ubuntu3.7"
+    }
+  ],
+  "copy": [
+    {
+      "source": "base_mailhog/run_mailhog_and_stunnel.sh",
+      "destination": "/usr/local/bin/run_mailhog_and_stunnel.sh"
+    }
+  ],
+  "extra_commands": [
+    "openssl req -new -x509 -days 3650 -nodes  -subj \"/C=ES/ST=Castellón/L=Castelló de la Plana/O=Windmaker/OU=IT/CN=mail.windmaker.net/emailAddress=alvaro@windmaker.net\" -out /etc/stunnel/stunnel.pem -keyout /etc/stunnel/stunnel.pem",
+    "go install github.com/mailhog/MailHog@v1.0.1",
+    "chmod +x /usr/local/bin/run_mailhog_and_stunnel.sh"
+  ],
+  "command": [
+    "/usr/local/bin/run_mailhog_and_stunnel.sh"
+  ],
+  "readme": {
+    "description": "Image based on base_golang_1_26 with MailHog and stunnel for email testing.",
+    "additional_features": [
+      "Packages: stunnel4, MailHog (v1.0.1) - Email testing tool",
+      "Self-signed certificate generated at build: Country ES, State Castellón, City Castelló de la Plana, Organization Windmaker, OU IT, CN mail.windmaker.net, Email alvaro@windmaker.net, validity 3650 days (10 years), location /etc/stunnel/stunnel.pem",
+      "Certificate includes both cert and private key in a single PEM file",
+      "Script run_mailhog_and_stunnel.sh starts MailHog and configures stunnel from environment variables",
+      "Required env vars: STUNNEL_SERVICE (stunnel service name), STUNNEL_ACCEPT (port to accept, e.g. 8443)",
+      "Example: docker run -d -e STUNNEL_SERVICE=mailhog -e STUNNEL_ACCEPT=8443 -p 8443:8443 -p 1025:1025 -p 8025:8025 harbor.windmaker.net/limani/base_mailhog:latest",
+      "MailHog on port 1025 (SMTP) and 8025 (Web UI); stunnel accepts SSL/TLS on 8443 and forwards to MailHog 1025",
+      "Web UI at http://localhost:8025 to view captured emails",
+      "Default CMD runs /usr/local/bin/run_mailhog_and_stunnel.sh",
+      "Ports: 8443 SSL/TLS SMTP (stunnel), 1025 plain SMTP (MailHog), 8025 Web UI (MailHog)"
+    ]
+  }
+}

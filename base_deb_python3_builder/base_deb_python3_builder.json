@@ -1,0 +1,60 @@
+{
+  "name": "base_deb_python3_builder",
+  "base_image": "harbor.windmaker.net/limani/base_deb_builder",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "equivs",
+      "version": "2.3.1"
+    },
+    {
+      "name": "python3.12-venv",
+      "version": "3.12.3-1ubuntu0.11"
+    },
+    {
+      "name": "python3-dev",
+      "version": "3.12.3-0ubuntu2.1"
+    },
+    {
+      "name": "devscripts",
+      "version": "2.23.7ubuntu0.1"
+    },
+    {
+      "name": "python3-venv",
+      "version": "3.12.3-0ubuntu2.1"
+    },
+    {
+      "name": "libffi-dev",
+      "version": "3.4.6-1build1"
+    },
+    {
+      "name": "python3-setuptools",
+      "version": "68.1.2-2ubuntu1.2"
+    },
+    {
+      "name": "python3-pip",
+      "version": "24.0+dfsg-1ubuntu1.3"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20240203"
+    }
+  ],
+  "extra_commands": [
+    "python3 -m venv /venv",
+    "/venv/bin/pip install --no-cache-dir hatch==1.16.3",
+    "ln -s /venv/bin/hatch /usr/local/bin/hatch",
+    "echo -e \"DEBEMAIL=\\\"alvaro@windmaker.net\\\"\\nDEBFULLNAME=\\\"Álvaro Castellano Vela\\\"\\nexport DEBEMAIL DEBFULLNAME\\n\" >> ~/.bashrc.backup"
+  ],
+  "readme": {
+    "description": "This image is based on [base_deb_builder image](/base_deb_builder) and comes with Debian packaging utilities (perl flavour).",
+    "additional_features": [
+      "Creates a Python virtual environment at `/venv` with hatch for packaging",
+      "Configures DEBEMAIL and DEBFULLNAME environment variables"
+    ]
+  }
+}
