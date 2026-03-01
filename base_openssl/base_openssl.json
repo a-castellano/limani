@@ -1,0 +1,25 @@
+{
+  "name": "base_openssl",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "ca-certificates",
+      "version": "20240203"
+    },
+    {
+      "name": "openssl",
+      "version": "3.0.13-0ubuntu3.7"
+    }
+  ],
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with openssl installed.",
+    "additional_features": [
+      "Ensures that ca-certificates packages is also intalled."
+    ]
+  }
+}

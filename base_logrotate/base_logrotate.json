@@ -1,0 +1,25 @@
+{
+  "name": "base_hugo",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "cron",
+      "version": "3.0pl1-184ubuntu2"
+    },
+    {
+      "name": "logrotate",
+      "version": "3.21.0-2build1"
+    }
+  ],
+  "readme": {
+    "description": " This image is based on [base image](/base) and comes with cron and logrotate installed.",
+    "additional_features": [
+      "Used as sidecar for log rotation in our applications."
+    ]
+  }
+}

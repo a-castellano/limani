@@ -1,0 +1,29 @@
+{
+  "name": "base_curl",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "curl",
+      "version": "8.5.0-2ubuntu10.7"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20240203"
+    },
+    {
+      "name": "openssl",
+      "version": "3.0.13-0ubuntu3.7"
+    }
+  ],
+  "readme": {
+    "description": " This image is based on [base image](/base) comes with curl installed.",
+    "additional_features": [
+      "openssl and ca-certificates packages mat not be required but requests over https sites might fail."
+    ]
+  }
+}

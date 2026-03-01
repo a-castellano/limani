@@ -1,0 +1,24 @@
+{
+  "name": "base_perl_utils",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "libtest-perl-critic-perl",
+      "version": "1.04-2"
+    }
+  ],
+  "user": "ventus",
+  "extra_commands": ["adduser --disabled-password --gecos '' ventus"],
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with perl development utils installed.",
+    "additional_features": [
+      "Creates a non-root user 'ventus'",
+      "Runs as user 'ventus' by default"
+    ]
+  }
+}

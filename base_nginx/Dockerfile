@@ -1,17 +1,24 @@
+# Dockerfile generated using karavomarangos - https://git.windmaker.net/a-castellano/karavomarangos
 ARG BASE_IMAGE=harbor.windmaker.net/limani/base
 FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
+
 RUN \
   apt-get update -qq && \
-  apt-get install -qq -o=Dpkg::Use-Pty=0 -y nginx-full=1.24.0-2ubuntu7.6 --no-install-recommends && \
-  apt-get purge -y --auto-remove && \
+  apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
+    nginx-full=1.24.0-2ubuntu7.6 \
+    ca-certificates=20240203 \
+    openssl=3.0.13-0ubuntu3.7 \
+    --no-install-recommends && \
+  apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
+  apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
+  apt-get autoclean -qq -o=Dpkg::Use-Pty=0 -y && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/nginx/* && \
   ln -sf /dev/stdout /var/log/nginx/access.log && \
-  ln -sf /dev/stderr /var/log/nginx/error.log
+  ln -sf /dev/stderr /var/log/nginx/error.log 
 
-EXPOSE 80 443
-
+EXPOSE 80 443 
 CMD ["nginx", "-g", "daemon off;"]

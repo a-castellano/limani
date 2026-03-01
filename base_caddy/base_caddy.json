@@ -1,0 +1,19 @@
+{
+  "name": "base_caddy",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "caddy",
+      "version": "2.10.0"
+    }
+  ],
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with caddy installed.",
+    "additional_features": ["Caady is a web server."]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "base_bash_utils",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "sudo",
+      "version": "1.9.15p5-3ubuntu5.24.04.1"
+    },
+    {
+      "name": "ruby",
+      "version": "1:3.2~ubuntu1"
+    },
+    {
+      "name": "shunit2",
+      "version": "2.1.8-4"
+    },
+    {
+      "name": "make",
+      "version": "4.3-4.1build2"
+    },
+    {
+      "name": "shfmt",
+      "version": "3.8.0-1"
+    },
+    {
+      "name": "shellcheck",
+      "version": "0.9.0-1"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20240203"
+    }
+  ],
+  "extra_commands": [
+    "gem install bashcov --version 3.0.3",
+    "adduser --disabled-password --gecos '' ventus",
+    "adduser ventus sudo",
+    "echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers"
+  ],
+  "user": "ventus",
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with bash development utils installed.",
+    "additional_features": [
+      "Creates a non-root user 'ventus' with sudo privileges",
+      "Runs as user 'ventus' by default"
+    ]
+  }
+}

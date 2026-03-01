@@ -1,7 +1,14 @@
 # base_curl
 
-This image is based on [base image](/base) comes with curl installed.
+[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://harbor.windmaker.net/harbor/projects/2/repositories/base_curl)
+
+ This image is based on [base image](/base) comes with curl installed.
+
 
 Packages installed:
+- curl (8.5.0-2ubuntu10.7)
+- ca-certificates (20240203)
+- openssl (3.0.13-0ubuntu3.7)
 
- * curl (8.5.0-2ubuntu10.6)
+Additional features:
+- openssl and ca-certificates packages mat not be required but requests over https sites might fail.

@@ -1,0 +1,25 @@
+{
+  "name": "base_percona_client",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "daedalus-project-mysql-utils",
+      "version": "0.4-7"
+    },
+    {
+      "name": "percona-server-client",
+      "version": "8.4.7-7-1.noble"
+    }
+  ],
+  "readme": {
+    "description": "This image is based on [base image](/base) and comes with percona-server-client installed.",
+    "additional_features": [
+      "**daedalus-project-mysql-utils** allows you to change mysql root password"
+    ]
+  }
+}

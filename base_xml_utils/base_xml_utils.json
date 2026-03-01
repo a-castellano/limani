@@ -1,0 +1,25 @@
+{
+  "name": "base_xml_utils",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "libxml2-utils",
+      "version": "2.9.14+dfsg-1.3ubuntu3.7"
+    },
+    {
+      "name": "xmlstarlet",
+      "version": "1.6.1-4"
+    }
+  ],
+  "readme": {
+    "description": "This image is based on [base image](/base) and it comes with XML utils installed.",
+    "additional_features": [
+      "Used for XML schema validation."
+    ]
+  }
+}
