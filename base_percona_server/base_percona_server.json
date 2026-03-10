@@ -51,7 +51,9 @@
     }
   ],
   "user": "mysql",
-  "exposed_ports": [3306],
+  "exposed_ports": [
+    3306
+  ],
   "command": [
     "/usr/sbin/mysqld",
     "--bind-address=0.0.0.0",

@@ -8,7 +8,5 @@ This image is based on Ubuntu noble image, only Windmaker repos are added.
 Packages installed:
 
 Additional features:
-
 - Adds repo `http://packages.windmaker.net/ any main`
 - Adds repo `http://packages.windmaker.net/ noble main`
-

@@ -14,6 +14,8 @@
   ],
   "readme": {
     "description": "This image is based on [base image](/base) and comes with caddy installed.",
-    "additional_features": ["Caady is a web server."]
+    "additional_features": [
+      "Caady is a web server."
+    ]
   }
 }

@@ -13,7 +13,9 @@
     }
   ],
   "user": "ventus",
-  "extra_commands": ["adduser --disabled-password --gecos '' ventus"],
+  "extra_commands": [
+    "adduser --disabled-password --gecos '' ventus"
+  ],
   "readme": {
     "description": "This image is based on [base image](/base) and comes with perl development utils installed.",
     "additional_features": [
