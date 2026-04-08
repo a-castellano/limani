@@ -6,7 +6,7 @@ This image is based on [base image](/base) and comes with bash development utils
 
 
 Packages installed:
-- sudo (1.9.15p5-3ubuntu5.24.04.1)
+- sudo (1.9.15p5-3ubuntu5.24.04.2)
 - ruby (1:3.2~ubuntu1)
 - shunit2 (2.1.8-4)
 - make (4.3-4.1build2)

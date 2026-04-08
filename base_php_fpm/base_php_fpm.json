@@ -9,27 +9,27 @@
   "packages": [
     {
       "name": "php8.3-cli",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-curl",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-gmp",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-bcmath",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-zip",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-mysql",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-imagick",
@@ -37,19 +37,19 @@
     },
     {
       "name": "php8.3-xml",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-gd",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-mbstring",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-opcache",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-igbinary",
@@ -57,19 +57,19 @@
     },
     {
       "name": "php8.3-bz2",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-fpm",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-intl",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-pgsql",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "php8.3-redis",
@@ -77,7 +77,7 @@
     },
     {
       "name": "php8.3-readline",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     },
     {
       "name": "ca-certificates",
@@ -89,7 +89,7 @@
     },
     {
       "name": "php8.3-common",
-      "version": "8.3.6-0ubuntu0.24.04.6"
+      "version": "8.3.6-0ubuntu0.24.04.8"
     }
   ],
   "exposed_ports": [

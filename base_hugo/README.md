@@ -8,7 +8,7 @@ This image is based on [base_golang_1_26 image](/base_golang_1_26) and comes wit
 Packages installed:
 - rsync (3.2.7-1ubuntu1.2)
 - hugo (0.156.0)
-- openssh-client (1:9.6p1-3ubuntu13.14)
+- openssh-client (1:9.6p1-3ubuntu13.15)
 
 Additional features:
 - Added ssh and rsync packages for deployment purposes.
