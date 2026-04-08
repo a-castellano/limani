@@ -11,7 +11,7 @@ RUN \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     stunnel4=3:5.72-1build2 \
     ca-certificates=20240203 \
-    openssl=3.0.13-0ubuntu3.7 \
+    openssl=3.0.13-0ubuntu3.9 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

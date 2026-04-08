@@ -69,7 +69,7 @@
     },
     {
       "name": "openssl",
-      "version": "3.0.13-0ubuntu3.7"
+      "version": "3.0.13-0ubuntu3.9"
     }
   ],
   "extra_commands": [

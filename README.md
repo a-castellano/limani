@@ -20,7 +20,7 @@ Docker manifests of images used by one or more of my personal projects.
 - [base_percona_client](/base_percona_client): base image with Percona server client (8.4.7-7-1.noble).
 - [base_docker](/base_docker): base image with Docker utils installed (docker-ce, docker-ce-cli, containerd.io, docker-build, git-crypt).
 - [base_git](/base_git): base image with git and ca-certificates installed.
-- [base_openssl](/base_openssl): base image with openssl (3.0.13-0ubuntu3.7) installed.
+- [base_openssl](/base_openssl): base image with openssl (3.0.13-0ubuntu3.9) installed.
 - [base_golang_1_26](/base_golang_1_26): base image containing golang 1.26 (1.26.0-1longsleep1+jammy) and packaging utils.
 
 ### Services

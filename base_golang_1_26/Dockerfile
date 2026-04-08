@@ -25,7 +25,7 @@ RUN \
     golang-1.26-go=1.26.1-1longsleep2+jammy \
     ca-certificates=20240203 \
     dh-golang=1.62 \
-    openssl=3.0.13-0ubuntu3.7 \
+    openssl=3.0.13-0ubuntu3.9 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
