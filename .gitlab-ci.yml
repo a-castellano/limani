@@ -24,6 +24,14 @@ build_base_git_image:
     - docker-build
   dependencies:
     - build_base_image
+build_base_nodejs_24_image:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_nodejs_24
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
+    - build_base_image
 build_base_xml_utils_image:
   stage: build_base_inherited_images
   script:

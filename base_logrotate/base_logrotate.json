@@ -1,5 +1,5 @@
 {
-  "name": "base_hugo",
+  "name": "base_logrotate",
   "base_image": "harbor.windmaker.net/limani/base",
   "maintainer": {
     "name": "Álvaro",
