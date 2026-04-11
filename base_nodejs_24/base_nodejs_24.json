@@ -1,0 +1,36 @@
+{
+  "name": "base_nodejs_24",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "required_repositories": {
+    "name": "nodejs",
+    "apt_lines": [
+      "deb [arch=amd64 signed-by=/etc/apt/keyrings/nodejs.gpg] https://deb.nodesource.com/node_24.x nodistro main"
+    ],
+    "gpg_keyring": {
+      "name": "nodejs",
+      "content": {
+        "type": "key",
+        "data": [
+          "2F59B5F99B1BE0B4"
+        ]
+      }
+    }
+  },
+  "readme": {
+    "description": "This image is based on Limani base image, and comes with nodejs 24 installed.",
+    "additional_features": [
+      "Adds repo `https://deb.nodesource.com/node_24.x nodistro main`"
+    ]
+  },
+  "packages": [
+    {
+      "name": "nodejs",
+      "version": "24.14.1-1nodesource1"
+    }
+  ]
+}
