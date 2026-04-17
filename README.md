@@ -21,7 +21,7 @@ Docker manifests of images used by one or more of my personal projects.
 - [base_docker](/base_docker): base image with Docker utils installed (docker-ce and docker-ce-cli 5:28.3.2-1~ubuntu.24.04~noble, containerd.io 1.7.27-1, docker-build 0.4-1, git-crypt 0.7.0-0.1build3).
 - [base_git](/base_git): base image with git (1:2.43.0-1ubuntu7.3), ca-certificates (20240203), and openssl (3.0.13-0ubuntu3.9).
 - [base_openssl](/base_openssl): base image with openssl (3.0.13-0ubuntu3.9) and ca-certificates (20240203) installed.
-- [base_golang_1_26](/base_golang_1_26): base image containing Go 1.26 (golang-1.26-go 1.26.1-1longsleep2+jammy), dh-golang, nfpm, make, clang, and related packaging utils.
+- [base_golang_1_26](/base_golang_1_26): base image containing Go 1.26 (golang-1.26-go 1.26.2-1longsleep1+jammy), dh-golang, nfpm, make, clang, and related packaging utils.
 - [base_nodejs_24](/base_nodejs_24): base image with Node.js 24 from NodeSource (nodejs 24.14.1-1nodesource1).
 
 ### Services
