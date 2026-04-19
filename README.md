@@ -13,7 +13,7 @@ Docker manifests of images used by one or more of my personal projects.
 ### Utilities
 
 - [base_curl](/base_curl): base image with curl (8.5.0-2ubuntu10.8).
-- [base_hugo](/base_hugo): base image with [Hugo](https://gohugo.io/) (0.156.0), rsync (3.2.7-1ubuntu1.2), and openssh-client (1:9.6p1-3ubuntu13.15).
+- [base_hugo](/base_hugo): base image with [Hugo](https://gohugo.io/) (0.160.1), rsync (3.2.7-1ubuntu1.2), openssh-client (1:9.6p1-3ubuntu13.15), ca-certificates (20240203), and openssl (3.0.13-0ubuntu3.9).
 - [base_xml_utils](/base_xml_utils): base image containing XML utils (libxml2-utils 2.9.14+dfsg-1.3ubuntu3.7, xmlstarlet 1.6.1-4).
 - [base_bash_utils](/base_bash_utils): base image containing bash development utils (shellcheck 0.9.0-1, shunit2 2.1.8-4, make 4.3-4.1build2, shfmt 3.8.0-1, bashcov 3.0.3 via RubyGems) with non-root user 'ventus'.
 - [base_perl_utils](/base_perl_utils): base image containing perl development utils (libtest-perl-critic-perl 1.04-2) with non-root user 'ventus'.
