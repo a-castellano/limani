@@ -13,7 +13,7 @@ Docker manifests of images used by one or more of my personal projects.
 ### Utilities
 
 - [base_curl](/base_curl): base image with curl (8.5.0-2ubuntu10.8).
-- [base_hugo](/base_hugo): base image with [Hugo](https://gohugo.io/) (0.160.1), rsync (3.2.7-1ubuntu1.2), openssh-client (1:9.6p1-3ubuntu13.15), ca-certificates (20240203), and openssl (3.0.13-0ubuntu3.9).
+- [base_hugo](/base_hugo): base image with [Hugo](https://gohugo.io/) (0.160.1), [Dart Sass](https://github.com/sass/dart-sass) (1.99.0) in `/usr/local/bin/sass`, rsync (3.2.7-1ubuntu1.2), openssh-client (1:9.6p1-3ubuntu13.15), ca-certificates (20240203), and openssl (3.0.13-0ubuntu3.9).
 - [base_xml_utils](/base_xml_utils): base image containing XML utils (libxml2-utils 2.9.14+dfsg-1.3ubuntu3.7, xmlstarlet 1.6.1-4).
 - [base_bash_utils](/base_bash_utils): base image containing bash development utils (shellcheck 0.9.0-1, shunit2 2.1.8-4, make 4.3-4.1build2, shfmt 3.8.0-1, bashcov 3.0.3 via RubyGems) with non-root user 'ventus'.
 - [base_perl_utils](/base_perl_utils): base image containing perl development utils (libtest-perl-critic-perl 1.04-2) with non-root user 'ventus'.
@@ -40,7 +40,7 @@ Docker manifests of images used by one or more of my personal projects.
 - [base_deb_builder](/base_deb_builder): base image containing Debian packaging utilities (dpkg-dev 1.22.6ubuntu6.5, debhelper 13.14.1ubuntu5, build-essential 12.10ubuntu1, fakeroot 1.33-1, libdebhelper-perl 13.14.1ubuntu5).
 - [base_deb_perl_builder](/base_deb_perl_builder): base image containing Debian packaging utilities (perl flavour) with dh-make-perl (0.124) and related modules (e.g. libmodule-build-perl 0.423400-2, libcatalyst-modules-perl 49).
 - [base_deb_c_builder](/base_deb_c_builder): base image containing Debian packaging utilities (c flavour) with gcc (4:13.2.0-7ubuntu1), cmake (3.28.3-1build7), bison (2:3.8.2+dfsg-1build2), flex (2.6.4-8.2build1).
-- [base_deb_python3_builder](/base_deb_python3_builder): base image containing Debian packaging utilities (python3 flavour) with python3-dev (3.12.3-0ubuntu2.1), python3-pip (24.0+dfsg-1ubuntu1.3), equivs (2.3.1), devscripts (2.23.7ubuntu0.2), and Hatch (1.16.3) in `/venv`.
+- [base_deb_python3_builder](/base_deb_python3_builder): base image containing Debian packaging utilities (python3 flavour) with python3-dev (3.12.3-0ubuntu2.1), python3.12-venv (3.12.3-1ubuntu0.13), python3-pip (24.0+dfsg-1ubuntu1.3), equivs (2.3.1), devscripts (2.23.7ubuntu0.2), and Hatch (1.16.3) in `/venv`.
 
 ## Features
 

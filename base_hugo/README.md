@@ -14,3 +14,4 @@ Packages installed:
 
 Additional features:
 - Added ssh and rsync packages for deployment purposes.
+- sass is also installed in /usr/local/bin/sass for Hugo projects that require it.

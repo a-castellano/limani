@@ -28,10 +28,21 @@
       "version": "3.0.13-0ubuntu3.9"
     }
   ],
+  "copy": [
+    {
+      "source": "base_hugo/files/sass",
+      "destination": "/tmp/sass"
+    }
+  ],
+  "extra_commands": [
+    "mv /tmp/sass /usr/local/bin/sass",
+    "chmod 755 /usr/local/bin/sass"
+  ],
   "readme": {
     "description": "This image is based on [base_golang_1_26 image](/base_golang_1_26) and comes with Hugo installed.",
     "additional_features": [
-      "Added ssh and rsync packages for deployment purposes."
+      "Added ssh and rsync packages for deployment purposes.",
+      "sass is also installed in /usr/local/bin/sass for Hugo projects that require it."
     ]
   }
 }
