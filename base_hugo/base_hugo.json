@@ -30,19 +30,20 @@
   ],
   "copy": [
     {
-      "source": "base_hugo/sass",
-      "destination": "/tmp/sass"
+      "source": "base_hugo/dart-sass",
+      "destination": "/tmp/dart-sass"
     }
   ],
   "extra_commands": [
-    "mv /tmp/sass /usr/local/bin/sass",
-    "chmod 755 /usr/local/bin/sass"
+    "mv /tmp/dart-sass /usr/local/lib/dart-sass",
+    "chmod 755 /usr/local/lib/dart-sass/sass",
+    "ln -s /usr/local/lib/dart-sass/sass /usr/local/bin/sass"
   ],
   "readme": {
     "description": "This image is based on [base_golang_1_26 image](/base_golang_1_26) and comes with Hugo installed.",
     "additional_features": [
       "Added ssh and rsync packages for deployment purposes.",
-      "sass is also installed in /usr/local/bin/sass for Hugo projects that require it."
+      "dart-sass is also installed, check CI config."
     ]
   }
 }

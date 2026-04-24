@@ -4,7 +4,7 @@ FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
-COPY base_hugo/sass /tmp/sass
+COPY base_hugo/dart-sass /tmp/dart-sass
 
 RUN \
   apt-get update -qq && \
@@ -19,5 +19,6 @@ RUN \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
   apt-get autoclean -qq -o=Dpkg::Use-Pty=0 -y && \
   rm -rf /var/lib/apt/lists/* && \
-  mv /tmp/sass /usr/local/bin/sass && \
-  chmod 755 /usr/local/bin/sass 
+  mv /tmp/dart-sass /usr/local/lib/dart-sass && \
+  chmod 755 /usr/local/lib/dart-sass/sass && \
+  ln -s /usr/local/lib/dart-sass/sass /usr/local/bin/sass 
