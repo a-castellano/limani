@@ -4,7 +4,7 @@ FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
-COPY base_hugo/files/sass /tmp/sass
+COPY base_hugo/sass /tmp/sass
 
 RUN \
   apt-get update -qq && \

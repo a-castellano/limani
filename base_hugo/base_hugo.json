@@ -30,7 +30,7 @@
   ],
   "copy": [
     {
-      "source": "base_hugo/files/sass",
+      "source": "base_hugo/sass",
       "destination": "/tmp/sass"
     }
   ],
