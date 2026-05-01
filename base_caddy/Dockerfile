@@ -8,7 +8,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    caddy=2.10.0 \
+    caddy=2.11.2 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

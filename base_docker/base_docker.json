@@ -9,11 +9,11 @@
   "packages": [
     {
       "name": "containerd.io",
-      "version": "1.7.27-1"
+      "version": "2.2.3-1~ubuntu.24.04~noble"
     },
     {
       "name": "docker-ce",
-      "version": "5:28.3.2-1~ubuntu.24.04~noble"
+      "version": "5:29.4.1-1~ubuntu.24.04~noble"
     },
     {
       "name": "git-crypt",
@@ -21,7 +21,7 @@
     },
     {
       "name": "docker-ce-cli",
-      "version": "5:28.3.2-1~ubuntu.24.04~noble"
+      "version": "5:29.4.1-1~ubuntu.24.04~noble"
     },
     {
       "name": "docker-build",
