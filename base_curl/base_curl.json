@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "curl",
-      "version": "8.5.0-2ubuntu10.8"
+      "version": "8.5.0-2ubuntu10.9"
     },
     {
       "name": "ca-certificates",

@@ -12,7 +12,7 @@ RUN \
     fakeroot=1.33-1 \
     build-essential=12.10ubuntu1 \
     libdebhelper-perl=13.14.1ubuntu5 \
-    dpkg-dev=1.22.6ubuntu6.5 \
+    dpkg-dev=1.22.6ubuntu6.6 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

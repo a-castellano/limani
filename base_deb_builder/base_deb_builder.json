@@ -25,7 +25,7 @@
     },
     {
       "name": "dpkg-dev",
-      "version": "1.22.6ubuntu6.5"
+      "version": "1.22.6ubuntu6.6"
     }
   ],
   "extra_commands": [
