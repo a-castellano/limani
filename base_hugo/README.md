@@ -9,7 +9,7 @@ Packages installed:
 - rsync (3.2.7-1ubuntu1.2)
 - hugo (0.160.1)
 - ca-certificates (20240203)
-- openssh-client (1:9.6p1-3ubuntu13.15)
+- openssh-client (1:9.6p1-3ubuntu13.16)
 - openssl (3.0.13-0ubuntu3.9)
 
 Additional features:
