@@ -8,7 +8,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    nginx-full=1.24.0-2ubuntu7.7 \
+    nginx-full=1.24.0-2ubuntu7.8 \
     ca-certificates=20240203 \
     openssl=3.0.13-0ubuntu3.9 \
     --no-install-recommends && \

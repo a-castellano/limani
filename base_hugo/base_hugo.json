@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "rsync",
-      "version": "3.2.7-1ubuntu1.2"
+      "version": "3.2.7-1ubuntu1.4"
     },
     {
       "name": "hugo",
