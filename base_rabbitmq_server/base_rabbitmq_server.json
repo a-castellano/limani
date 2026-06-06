@@ -46,6 +46,10 @@
       "destination": "/tmp/enabled_plugins"
     }
   ],
+  "extra_commands": [
+    "mv /tmp/rabbitmq.conf /tmp/enabled_plugins /etc/rabbitmq/",
+    "chown rabbitmq:rabbitmq /etc/rabbitmq/*"
+  ],
   "readme": {
     "description": "RabbitMQ server image with custom config and plugins. Ports 4369, 5671, 5672, 25672 exposed.",
     "additional_features": [

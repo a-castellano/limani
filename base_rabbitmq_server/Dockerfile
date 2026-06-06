@@ -15,7 +15,9 @@ RUN \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
   apt-get autoclean -qq -o=Dpkg::Use-Pty=0 -y && \
-  rm -rf /var/lib/apt/lists/* 
+  rm -rf /var/lib/apt/lists/* && \
+  mv /tmp/rabbitmq.conf /tmp/enabled_plugins /etc/rabbitmq/ && \
+  chown rabbitmq:rabbitmq /etc/rabbitmq/* 
 
 USER rabbitmq
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8 
