@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "nginx-full",
-      "version": "1.24.0-2ubuntu7.9"
+      "version": "1.24.0-2ubuntu7.11"
     },
     {
       "name": "ca-certificates",
@@ -17,7 +17,7 @@
     },
     {
       "name": "openssl",
-      "version": "3.0.13-0ubuntu3.9"
+      "version": "3.0.13-0ubuntu3.11"
     }
   ],
   "exposed_ports": [

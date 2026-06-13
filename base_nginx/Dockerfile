@@ -8,9 +8,9 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    nginx-full=1.24.0-2ubuntu7.9 \
+    nginx-full=1.24.0-2ubuntu7.11 \
     ca-certificates=20240203 \
-    openssl=3.0.13-0ubuntu3.9 \
+    openssl=3.0.13-0ubuntu3.11 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

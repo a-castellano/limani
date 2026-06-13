@@ -8,7 +8,7 @@
 Packages installed:
 - curl (8.5.0-2ubuntu10.9)
 - ca-certificates (20240203)
-- openssl (3.0.13-0ubuntu3.9)
+- openssl (3.0.13-0ubuntu3.11)
 
 Additional features:
 - openssl and ca-certificates packages mat not be required but requests over https sites might fail.

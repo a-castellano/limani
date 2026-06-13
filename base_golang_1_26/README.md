@@ -10,14 +10,14 @@ Packages installed:
 - nfpm (2.43.0)
 - golang-golang-x-sys-dev (0.17.0-1)
 - sudo (1.9.15p5-3ubuntu5.24.04.2)
-- golang-1.26 (1.26.3-1longsleep1+jammy)
+- golang-1.26 (1.26.4-1longsleep1+jammy)
 - make (4.3-4.1build2)
 - clang (1:18.0-59~exp2)
 - bind9-host (1:9.18.39-0ubuntu0.24.04.5)
-- golang-1.26-go (1.26.3-1longsleep1+jammy)
+- golang-1.26-go (1.26.4-1longsleep1+jammy)
 - ca-certificates (20240203)
 - dh-golang (1.62)
-- openssl (3.0.13-0ubuntu3.9)
+- openssl (3.0.13-0ubuntu3.11)
 
 Additional features:
 - Symlink for go binary and DEBEMAIL/DEBFULLNAME in bashrc
