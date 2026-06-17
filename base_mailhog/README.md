@@ -7,7 +7,7 @@ Image based on base_golang_1_26 with MailHog and stunnel for email testing.
 
 Packages installed:
 - stunnel4 (3:5.72-1build2)
-- ca-certificates (20240203)
+- ca-certificates (20260601~24.04.1)
 - openssl (3.0.13-0ubuntu3.11)
 
 Additional features:

@@ -24,7 +24,7 @@ Packages installed:
 - php8.3-pgsql (8.3.6-0ubuntu0.24.04.9)
 - php8.3-redis (5.3.7+4.3.0-3ubuntu1)
 - php8.3-readline (8.3.6-0ubuntu0.24.04.9)
-- ca-certificates (20240203)
+- ca-certificates (20260601~24.04.1)
 - openssl (3.0.13-0ubuntu3.11)
 - php8.3-common (8.3.6-0ubuntu0.24.04.9)
 

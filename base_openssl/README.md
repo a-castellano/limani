@@ -6,7 +6,7 @@ This image is based on [base image](/base) and comes with openssl installed.
 
 
 Packages installed:
-- ca-certificates (20240203)
+- ca-certificates (20260601~24.04.1)
 - openssl (3.0.13-0ubuntu3.11)
 
 Additional features:

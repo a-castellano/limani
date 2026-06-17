@@ -8,7 +8,7 @@ This image is based on [base_golang_1_26 image](/base_golang_1_26) and comes wit
 Packages installed:
 - rsync (3.2.7-1ubuntu1.5)
 - hugo (0.160.1)
-- ca-certificates (20240203)
+- ca-certificates (20260601~24.04.1)
 - openssh-client (1:9.6p1-3ubuntu13.16)
 - openssl (3.0.13-0ubuntu3.11)
 

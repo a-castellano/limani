@@ -12,7 +12,7 @@ Packages installed:
 - make (4.3-4.1build2)
 - shfmt (3.8.0-1)
 - shellcheck (0.9.0-1)
-- ca-certificates (20240203)
+- ca-certificates (20260601~24.04.1)
 
 Additional features:
 - Creates a non-root user 'ventus' with sudo privileges

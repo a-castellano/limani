@@ -7,7 +7,7 @@ This image is based on [base image](/base) and comes with git installed.
 
 Packages installed:
 - git (1:2.43.0-1ubuntu7.3)
-- ca-certificates (20240203)
+- ca-certificates (20260601~24.04.1)
 - openssl (3.0.13-0ubuntu3.11)
 
 Additional features:

@@ -14,7 +14,7 @@ RUN \
     make=4.3-4.1build2 \
     shfmt=3.8.0-1 \
     shellcheck=0.9.0-1 \
-    ca-certificates=20240203 \
+    ca-certificates=20260601~24.04.1 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

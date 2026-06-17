@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "ca-certificates",
-      "version": "20240203"
+      "version": "20260601~24.04.1"
     },
     {
       "name": "openssl",

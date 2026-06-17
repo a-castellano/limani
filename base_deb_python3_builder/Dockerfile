@@ -16,7 +16,7 @@ RUN \
     libffi-dev=3.4.6-1build1 \
     python3-setuptools=68.1.2-2ubuntu1.2 \
     python3-pip=24.0+dfsg-1ubuntu1.3 \
-    ca-certificates=20240203 \
+    ca-certificates=20260601~24.04.1 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

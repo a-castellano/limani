@@ -15,7 +15,7 @@ Packages installed:
 - clang (1:18.0-59~exp2)
 - bind9-host (1:9.18.39-0ubuntu0.24.04.5)
 - golang-1.26-go (1.26.4-1longsleep1+jammy)
-- ca-certificates (20240203)
+- ca-certificates (20260601~24.04.1)
 - dh-golang (1.62)
 - openssl (3.0.13-0ubuntu3.11)
 
