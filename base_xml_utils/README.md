@@ -6,7 +6,7 @@ This image is based on [base image](/base) and it comes with XML utils installed
 
 
 Packages installed:
-- libxml2-utils (2.9.14+dfsg-1.3ubuntu3.7)
+- libxml2-utils (2.9.14+dfsg-1.3ubuntu3.8)
 - xmlstarlet (1.6.1-4)
 
 Additional features:

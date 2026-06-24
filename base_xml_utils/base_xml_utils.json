@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "libxml2-utils",
-      "version": "2.9.14+dfsg-1.3ubuntu3.7"
+      "version": "2.9.14+dfsg-1.3ubuntu3.8"
     },
     {
       "name": "xmlstarlet",
