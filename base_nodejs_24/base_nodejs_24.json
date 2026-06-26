@@ -30,7 +30,7 @@
   "packages": [
     {
       "name": "nodejs",
-      "version": "24.17.0-1nodesource1"
+      "version": "24.18.0-1nodesource1"
     }
   ]
 }

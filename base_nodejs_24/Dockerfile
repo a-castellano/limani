@@ -13,7 +13,7 @@ RUN \
   echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/nodejs.gpg] https://deb.nodesource.com/node_24.x nodistro main" >> /etc/apt/sources.list.d/nodejs.list && \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    nodejs=24.17.0-1nodesource1 \
+    nodejs=24.18.0-1nodesource1 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
