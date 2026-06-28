@@ -18,10 +18,10 @@ RUN \
     nfpm=2.43.0 \
     golang-golang-x-sys-dev=0.17.0-1 \
     sudo=1.9.15p5-3ubuntu5.24.04.2 \
-    clang-20=1:20.1.2-0ubuntu1~24.04.3 \
+    libclang-rt-18-dev=1:18.1.3-1ubuntu1 \
     golang-1.26=1.26.4-1longsleep1+jammy \
     make=4.3-4.1build2 \
-    libclang-rt-20-dev=1:20.1.2-0ubuntu1~24.04.3 \
+    clang=1:18.0-59~exp2 \
     bind9-host=1:9.18.39-0ubuntu0.24.04.5 \
     golang-1.26-go=1.26.4-1longsleep1+jammy \
     ca-certificates=20260601~24.04.1 \
