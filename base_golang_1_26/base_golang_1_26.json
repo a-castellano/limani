@@ -40,6 +40,10 @@
       "version": "1.9.15p5-3ubuntu5.24.04.2"
     },
     {
+      "name": "clang-20",
+      "version": "1:20.1.2-0ubuntu1~24.04.3"
+    },
+    {
       "name": "golang-1.26",
       "version": "1.26.4-1longsleep1+jammy"
     },
@@ -48,8 +52,8 @@
       "version": "4.3-4.1build2"
     },
     {
-      "name": "clang",
-      "version": "1:18.0-59~exp2"
+      "name": "libclang-rt-20-dev",
+      "version": "1:20.1.2-0ubuntu1~24.04.3"
     },
     {
       "name": "bind9-host",
