@@ -6,7 +6,7 @@
 
 
 Packages installed:
-- curl (8.5.0-2ubuntu10.9)
+- curl (8.5.0-2ubuntu10.10)
 - ca-certificates (20260601~24.04.1)
 - openssl (3.0.13-0ubuntu3.11)
 
