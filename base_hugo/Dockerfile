@@ -12,7 +12,7 @@ RUN \
     rsync=3.2.7-1ubuntu1.5 \
     hugo=0.160.1 \
     ca-certificates=20260601~24.04.1 \
-    openssh-client=1:9.6p1-3ubuntu13.16 \
+    openssh-client=1:9.6p1-3ubuntu13.18 \
     openssl=3.0.13-0ubuntu3.11 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
