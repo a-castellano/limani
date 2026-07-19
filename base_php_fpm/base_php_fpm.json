@@ -8,88 +8,88 @@
   },
   "packages": [
     {
-      "name": "php8.3-cli",
+      "name": "php8.5-common",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-imagick",
+      "version": "3.8.0-3ubuntu1"
+    },
+    {
+      "name": "php8.5-gd",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-igbinary",
+      "version": "3.2.16-4ubuntu1"
+    },
+    {
+      "name": "php8.5-zip",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-mysql",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-intl",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-gmp",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-bz2",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-xml",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-fpm",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-curl",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-mbstring",
+      "version": "8.5.4-0ubuntu1.1"
+    },
+    {
+      "name": "php8.5-opcache",
       "version": "8.3.6-0ubuntu0.24.04.9"
     },
     {
-      "name": "php8.3-curl",
-      "version": "8.3.6-0ubuntu0.24.04.9"
+      "name": "php8.5-bcmath",
+      "version": "8.5.4-0ubuntu1.1"
     },
     {
-      "name": "php8.3-gmp",
-      "version": "8.3.6-0ubuntu0.24.04.9"
+      "name": "php8.5-cli",
+      "version": "8.5.4-0ubuntu1.1"
     },
     {
-      "name": "php8.3-bcmath",
-      "version": "8.3.6-0ubuntu0.24.04.9"
+      "name": "php8.5-pgsql",
+      "version": "8.5.4-0ubuntu1.1"
     },
     {
-      "name": "php8.3-zip",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-mysql",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-imagick",
-      "version": "3.7.0-4ubuntu3"
-    },
-    {
-      "name": "php8.3-xml",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-gd",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-mbstring",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-opcache",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-igbinary",
-      "version": "3.2.13-1ubuntu3"
-    },
-    {
-      "name": "php8.3-bz2",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-fpm",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-intl",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-pgsql",
-      "version": "8.3.6-0ubuntu0.24.04.9"
-    },
-    {
-      "name": "php8.3-redis",
-      "version": "5.3.7+4.3.0-3ubuntu1"
-    },
-    {
-      "name": "php8.3-readline",
-      "version": "8.3.6-0ubuntu0.24.04.9"
+      "name": "php8.5-readline",
+      "version": "8.5.4-0ubuntu1.1"
     },
     {
       "name": "ca-certificates",
       "version": "20260601~26.04.1"
     },
     {
-      "name": "openssl",
-      "version": "3.5.5-1ubuntu3.2"
+      "name": "php8.5-redis",
+      "version": "6.2.0-1ubuntu1"
     },
     {
-      "name": "php8.3-common",
-      "version": "8.3.6-0ubuntu0.24.04.9"
+      "name": "openssl",
+      "version": "3.5.5-1ubuntu3.2"
     }
   ],
   "exposed_ports": [
