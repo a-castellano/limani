@@ -10,7 +10,7 @@ RUN \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y gnupg ca-certificates wget --no-install-recommends && \
   wget -qO- http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub >> /etc/apt/keyrings/windmaker.gpg && \
   echo "Types: deb " > /etc/apt/sources.list.d/golang.sources && \
-  echo "URIs: http://packages.windmaker.net " >> /etc/apt/sources.list.d/golang.sources && \
+  echo "URIs: http://packages.windmaker.net/golang " >> /etc/apt/sources.list.d/golang.sources && \
   echo "Suites: resolute " >> /etc/apt/sources.list.d/golang.sources && \
   echo "Components: golang " >> /etc/apt/sources.list.d/golang.sources && \
   echo "Architectures: amd64 " >> /etc/apt/sources.list.d/golang.sources && \
@@ -22,11 +22,11 @@ RUN \
     golang-golang-x-sys-dev=0.38.0-1 \
     sudo=1.9.17p2-1ubuntu3 \
     libclang-rt-18-dev=1:18.1.8-20ubuntu8 \
-    golang-1.26=1.26.0-1 \
+    golang-1.26=1.26.4-1longsleep1+jammy \
     make=4.4.1-3 \
     clang=1:21.1.6-71 \
     bind9-host=1:9.20.18-1ubuntu2.1 \
-    golang-1.26-go=1.26.0-1 \
+    golang-1.26-go=1.26.4-1longsleep1+jammy \
     ca-certificates=20260601~26.04.1 \
     dh-golang=1.63build1 \
     openssl=3.5.5-1ubuntu3.2 \
