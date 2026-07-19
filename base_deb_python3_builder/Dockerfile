@@ -8,15 +8,15 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    equivs=2.3.1 \
+    equivs=2.3.2build1 \
     python3.12-venv=3.12.3-1ubuntu0.15 \
-    python3-dev=3.12.3-0ubuntu2.1 \
-    devscripts=2.23.7ubuntu0.2 \
-    python3-venv=3.12.3-0ubuntu2.1 \
-    libffi-dev=3.4.6-1build1 \
-    python3-setuptools=68.1.2-2ubuntu1.2 \
-    python3-pip=24.0+dfsg-1ubuntu1.3 \
-    ca-certificates=20260601~24.04.1 \
+    python3-dev=3.14.3-0ubuntu2 \
+    devscripts=2.26.7 \
+    python3-venv=3.14.3-0ubuntu2 \
+    libffi-dev=3.5.2-4 \
+    python3-setuptools=78.1.1-0.1build1 \
+    python3-pip=25.1.1+dfsg-1ubuntu2 \
+    ca-certificates=20260601~26.04.1 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

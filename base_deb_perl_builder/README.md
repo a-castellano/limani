@@ -6,10 +6,10 @@ This image is based on [base_deb_builder image](/base_deb_builder) and comes wit
 
 
 Packages installed:
-- libmodule-build-tiny-perl (0.047-1)
-- libmodule-install-perl (1.21-1)
-- libmodule-build-perl (0.423400-2)
-- dh-make-perl (0.124)
+- libmodule-build-tiny-perl (0.052-1)
+- libmodule-install-perl (1.21-2)
+- libmodule-build-perl (0.423400-3)
+- dh-make-perl (0.130)
 - libgit-wrapper-perl (0.048-2)
 - libcatalyst-modules-perl (49)
 

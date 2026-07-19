@@ -9,19 +9,19 @@
   "packages": [
     {
       "name": "cmake",
-      "version": "3.28.3-1build7"
+      "version": "4.2.3-2ubuntu2"
     },
     {
       "name": "bison",
-      "version": "2:3.8.2+dfsg-1build2"
+      "version": "2:3.8.2+dfsg-1build4"
     },
     {
       "name": "flex",
-      "version": "2.6.4-8.2build1"
+      "version": "2.6.4-8.2build2"
     },
     {
       "name": "gcc",
-      "version": "4:13.2.0-7ubuntu1"
+      "version": "4:15.2.0-5ubuntu1"
     }
   ],
   "extra_commands": [
