@@ -1,6 +1,6 @@
 {
   "name": "base",
-  "base_image": "ubuntu:noble",
+  "base_image": "ubuntu:resolute",
   "maintainer": {
     "name": "Álvaro",
     "surname": "Castellano Vela",
@@ -8,10 +8,25 @@
   },
   "required_repositories": {
     "name": "windmaker",
-    "apt_lines": [
-      "deb [signed-by=/etc/apt/keyrings/windmaker.gpg] http://packages.windmaker.net/ any main",
-      "deb [arch=amd64 signed-by=/etc/apt/keyrings/windmaker.gpg] http://packages.windmaker.net/ noble main"
-    ],
+    "apt_sources": {
+      "types": [
+        "deb"
+      ],
+      "uris": [
+        "http://packages.windmaker.net"
+      ],
+      "suites": [
+        "any",
+        "resolute"
+      ],
+      "components": [
+        "main"
+      ],
+      "architectures": [
+        "amd64"
+      ],
+      "gpg_keyring": "/etc/apt/keyrings/windmaker.gpg"
+    },
     "gpg_keyring": {
       "name": "windmaker",
       "content": {
@@ -23,10 +38,10 @@
     }
   },
   "readme": {
-    "description": "This image is based on Ubuntu noble image, only Windmaker repos are added.",
+    "description": "This image is based on Ubuntu resolute image, only Windmaker repos are added.",
     "additional_features": [
       "Adds repo `http://packages.windmaker.net/ any main`",
-      "Adds repo `http://packages.windmaker.net/ noble main`"
+      "Adds repo `http://packages.windmaker.net/ resolute main`"
     ]
   },
   "packages": []
