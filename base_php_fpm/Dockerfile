@@ -21,7 +21,6 @@ RUN \
     php8.5-fpm=8.5.4-0ubuntu1.1 \
     php8.5-curl=8.5.4-0ubuntu1.1 \
     php8.5-mbstring=8.5.4-0ubuntu1.1 \
-    php8.5-opcache=8.3.6-0ubuntu0.24.04.9 \
     php8.5-bcmath=8.5.4-0ubuntu1.1 \
     php8.5-cli=8.5.4-0ubuntu1.1 \
     php8.5-pgsql=8.5.4-0ubuntu1.1 \
@@ -36,4 +35,4 @@ RUN \
   rm -rf /var/lib/apt/lists/* 
 
 EXPOSE 9000 
-CMD ["php-fpm8.3", "-F", "--allow-to-run-as-root"]
+CMD ["php-fpm8.5", "-F", "--allow-to-run-as-root"]

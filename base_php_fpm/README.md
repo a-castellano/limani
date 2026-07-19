@@ -19,7 +19,6 @@ Packages installed:
 - php8.5-fpm (8.5.4-0ubuntu1.1)
 - php8.5-curl (8.5.4-0ubuntu1.1)
 - php8.5-mbstring (8.5.4-0ubuntu1.1)
-- php8.5-opcache (8.3.6-0ubuntu0.24.04.9)
 - php8.5-bcmath (8.5.4-0ubuntu1.1)
 - php8.5-cli (8.5.4-0ubuntu1.1)
 - php8.5-pgsql (8.5.4-0ubuntu1.1)
@@ -30,4 +29,4 @@ Packages installed:
 
 Additional features:
 - Port 9000 exposed
-- The default PHP-FPM configuration is located at `/etc/php/8.3/fpm/php-fpm.conf`. The pool configuration is at `/etc/php/8.3/fpm/pool.d/www.conf`.
+- The default PHP-FPM configuration is located at `/etc/php/8.5/fpm/php-fpm.conf`. The pool configuration is at `/etc/php/8.5/fpm/pool.d/www.conf`.
