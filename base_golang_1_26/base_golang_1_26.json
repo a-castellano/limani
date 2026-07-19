@@ -8,19 +8,33 @@
   },
   "required_repositories": {
     "name": "golang",
+    "apt_sources": {
+      "types": [
+        "deb"
+      ],
+      "uris": [
+        "http://packages.windmaker.net"
+      ],
+      "suites": [
+        "resolute"
+      ],
+      "components": [
+        "golang"
+      ],
+      "architectures": [
+        "amd64"
+      ],
+      "gpg_keyring": "/etc/apt/keyrings/windmaker.gpg"
+    },
     "gpg_keyring": {
-      "name": "golang",
+      "name": "windmaker",
       "content": {
-        "type": "key",
+        "type": "url",
         "data": [
-          "C631127F87FA12D1",
-          "F6BC817356A3D45E"
+          "http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub"
         ]
       }
-    },
-    "apt_lines": [
-      "deb [signed-by=/etc/apt/keyrings/golang.gpg] https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu/ noble main"
-    ]
+    }
   },
   "packages": [
     {

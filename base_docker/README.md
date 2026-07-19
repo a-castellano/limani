@@ -8,7 +8,7 @@ This image is based on [base image](/base) and comes with docker and docker util
 Packages installed:
 - containerd.io (2.2.3-1~ubuntu.24.04~noble)
 - docker-ce (5:29.4.1-1~ubuntu.24.04~noble)
-- git-crypt (0.7.0-0.1build3)
+- git-crypt (0.8.0-1)
 - docker-ce-cli (5:29.4.1-1~ubuntu.24.04~noble)
 - docker-build (0.4-1)
 

@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "libtest-perl-critic-perl",
-      "version": "1.04-2"
+      "version": "1.04-3"
     }
   ],
   "user": "ventus",

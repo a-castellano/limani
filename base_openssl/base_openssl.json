@@ -9,11 +9,11 @@
   "packages": [
     {
       "name": "ca-certificates",
-      "version": "20260601~24.04.1"
+      "version": "20260601~26.04.1"
     },
     {
       "name": "openssl",
-      "version": "3.0.13-0ubuntu3.11"
+      "version": "3.5.5-1ubuntu3.2"
     }
   ],
   "readme": {

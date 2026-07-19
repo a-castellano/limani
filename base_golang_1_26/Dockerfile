@@ -8,10 +8,13 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y gnupg ca-certificates wget --no-install-recommends && \
-  gpg --keyserver keyserver.ubuntu.com --recv-keys C631127F87FA12D1 && \
-  gpg --keyserver keyserver.ubuntu.com --recv-keys F6BC817356A3D45E && \
-  gpg --export C631127F87FA12D1 F6BC817356A3D45E | gpg --dearmor > /etc/apt/keyrings/golang.gpg && \
-  echo "deb [signed-by=/etc/apt/keyrings/golang.gpg] https://ppa.launchpadcontent.net/longsleep/golang-backports/ubuntu/ noble main" >> /etc/apt/sources.list.d/golang.list && \
+  wget -qO- http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub >> /etc/apt/keyrings/windmaker.gpg && \
+  echo "Types: deb " > /etc/apt/sources.list.d/golang.sources && \
+  echo "URIs: http://packages.windmaker.net " >> /etc/apt/sources.list.d/golang.sources && \
+  echo "Suites: resolute " >> /etc/apt/sources.list.d/golang.sources && \
+  echo "Components: golang " >> /etc/apt/sources.list.d/golang.sources && \
+  echo "Architectures: amd64 " >> /etc/apt/sources.list.d/golang.sources && \
+  echo "Signed-By: /etc/apt/keyrings/windmaker.gpg" >> /etc/apt/sources.list.d/golang.sources && \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     git=1:2.43.0-1ubuntu7.3 \

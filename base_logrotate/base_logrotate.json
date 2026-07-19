@@ -9,11 +9,11 @@
   "packages": [
     {
       "name": "cron",
-      "version": "3.0pl1-184ubuntu2"
+      "version": "3.0pl1-200ubuntu1"
     },
     {
       "name": "logrotate",
-      "version": "3.21.0-2build1"
+      "version": "3.22.0-1build1"
     }
   ],
   "readme": {

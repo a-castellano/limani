@@ -6,9 +6,9 @@ Percona Server (MySQL) image based on Limani base. Root password and auth plugin
 
 
 Packages installed:
-- percona-telemetry-agent (1.0.7-1.noble)
+- percona-telemetry-agent (1.0.14-1.resolute)
 - daedalus-project-mysql-utils (0.4-7)
-- percona-server-server (8.4.7-7-1.noble)
+- percona-server-server (8.4.10-10-1.resolute)
 
 Additional features:
 - Port 3306 exposed

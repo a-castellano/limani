@@ -9,31 +9,31 @@
   "packages": [
     {
       "name": "sudo",
-      "version": "1.9.15p5-3ubuntu5.24.04.2"
+      "version": "1.9.17p2-1ubuntu3"
     },
     {
       "name": "ruby",
-      "version": "1:3.2~ubuntu1"
+      "version": "1:3.3build1"
     },
     {
       "name": "shunit2",
-      "version": "2.1.8-4"
+      "version": "2.1.8-4build1"
     },
     {
       "name": "make",
-      "version": "4.3-4.1build2"
+      "version": "4.4.1-3"
     },
     {
       "name": "shfmt",
-      "version": "3.8.0-1"
+      "version": "3.12.0-1"
     },
     {
       "name": "shellcheck",
-      "version": "0.9.0-1"
+      "version": "0.11.0-2"
     },
     {
       "name": "ca-certificates",
-      "version": "20260601~24.04.1"
+      "version": "20260601~26.04.1"
     }
   ],
   "extra_commands": [

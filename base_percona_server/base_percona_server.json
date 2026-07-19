@@ -6,10 +6,40 @@
     "surname": "Castellano Vela",
     "email": "alvaro@windmaker.net"
   },
+  "required_repositories": {
+    "name": "percona-mysql",
+    "apt_sources": {
+      "types": [
+        "deb"
+      ],
+      "uris": [
+        "http://packages.windmaker.net/percona"
+      ],
+      "suites": [
+        "resolute"
+      ],
+      "components": [
+        "percona-mysql"
+      ],
+      "architectures": [
+        "amd64"
+      ],
+      "gpg_keyring": "/etc/apt/keyrings/windmaker.gpg"
+    },
+    "gpg_keyring": {
+      "name": "windmaker",
+      "content": {
+        "type": "url",
+        "data": [
+          "http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub"
+        ]
+      }
+    }
+  },
   "packages": [
     {
       "name": "percona-telemetry-agent",
-      "version": "1.0.7-1.noble"
+      "version": "1.0.14-1.resolute"
     },
     {
       "name": "daedalus-project-mysql-utils",
@@ -17,7 +47,7 @@
     },
     {
       "name": "percona-server-server",
-      "version": "8.4.7-7-1.noble"
+      "version": "8.4.10-10-1.resolute"
     }
   ],
   "build_environment_variables": [

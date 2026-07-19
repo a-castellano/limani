@@ -6,8 +6,8 @@ This image is based on [base image](/base) and it comes with XML utils installed
 
 
 Packages installed:
-- libxml2-utils (2.9.14+dfsg-1.3ubuntu3.8)
-- xmlstarlet (1.6.1-4)
+- libxml2-utils (2.15.2+dfsg-0.1ubuntu0.1)
+- xmlstarlet (1.6.1-5build1)
 
 Additional features:
 - Used for XML schema validation.

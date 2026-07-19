@@ -6,7 +6,7 @@ This image is based on [base image](/base) and comes with valkey-server installe
 
 
 Packages installed:
-- valkey-server (7.2.13+dfsg1-0ubuntu0.1)
+- valkey-server (9.0.4-0ubuntu0.1)
 
 Additional features:
 - Exposes port 6379.
