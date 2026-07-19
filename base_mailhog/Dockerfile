@@ -9,9 +9,9 @@ COPY base_mailhog/run_mailhog_and_stunnel.sh /usr/local/bin/run_mailhog_and_stun
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    stunnel4=3:5.72-1build2 \
-    ca-certificates=20260601~24.04.1 \
-    openssl=3.0.13-0ubuntu3.11 \
+    stunnel4=3:5.77-1 \
+    ca-certificates=20260601~26.04.1 \
+    openssl=3.5.5-1ubuntu3.2 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

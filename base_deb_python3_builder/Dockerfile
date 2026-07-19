@@ -9,7 +9,7 @@ RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     equivs=2.3.2build1 \
-    python3.12-venv=3.12.3-1ubuntu0.15 \
+    python3.14-venv=3.14.4-1ubuntu0.1 \
     python3-dev=3.14.3-0ubuntu2 \
     devscripts=2.26.7 \
     python3-venv=3.14.3-0ubuntu2 \
@@ -23,6 +23,6 @@ RUN \
   apt-get autoclean -qq -o=Dpkg::Use-Pty=0 -y && \
   rm -rf /var/lib/apt/lists/* && \
   python3 -m venv /venv && \
-  /venv/bin/pip install --no-cache-dir hatch==1.16.3 && \
+  /venv/bin/pip install --no-cache-dir hatch==1.17.1 && \
   ln -s /venv/bin/hatch /usr/local/bin/hatch && \
   echo -e "DEBEMAIL=\"alvaro@windmaker.net\"\nDEBFULLNAME=\"Álvaro Castellano Vela\"\nexport DEBEMAIL DEBFULLNAME\n" >> ~/.bashrc.backup 

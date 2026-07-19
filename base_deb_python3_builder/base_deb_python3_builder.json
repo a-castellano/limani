@@ -12,8 +12,8 @@
       "version": "2.3.2build1"
     },
     {
-      "name": "python3.12-venv",
-      "version": "3.12.3-1ubuntu0.15"
+      "name": "python3.14-venv",
+      "version": "3.14.4-1ubuntu0.1"
     },
     {
       "name": "python3-dev",
@@ -46,12 +46,12 @@
   ],
   "extra_commands": [
     "python3 -m venv /venv",
-    "/venv/bin/pip install --no-cache-dir hatch==1.16.3",
+    "/venv/bin/pip install --no-cache-dir hatch==1.17.1",
     "ln -s /venv/bin/hatch /usr/local/bin/hatch",
     "echo -e \"DEBEMAIL=\\\"alvaro@windmaker.net\\\"\\nDEBFULLNAME=\\\"Álvaro Castellano Vela\\\"\\nexport DEBEMAIL DEBFULLNAME\\n\" >> ~/.bashrc.backup"
   ],
   "readme": {
-    "description": "This image is based on [base_deb_builder image](/base_deb_builder) and comes with Debian packaging utilities (perl flavour).",
+    "description": "This image is based on [base_deb_builder image](/base_deb_builder) and comes with Debian packaging utilities (python flavour).",
     "additional_features": [
       "Creates a Python virtual environment at `/venv` with hatch for packaging",
       "Configures DEBEMAIL and DEBFULLNAME environment variables"

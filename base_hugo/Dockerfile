@@ -9,11 +9,11 @@ COPY base_hugo/dart-sass /tmp/dart-sass
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    rsync=3.2.7-1ubuntu1.5 \
+    rsync=3.4.1+ds1-7ubuntu0.3 \
     hugo=0.164.0 \
-    ca-certificates=20260601~24.04.1 \
-    openssh-client=1:9.6p1-3ubuntu13.18 \
-    openssl=3.0.13-0ubuntu3.11 \
+    ca-certificates=20260601~26.04.1 \
+    openssh-client=1:10.2p1-2ubuntu3.4 \
+    openssl=3.5.5-1ubuntu3.2 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

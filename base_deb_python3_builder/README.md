@@ -2,12 +2,12 @@
 
 [![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://harbor.windmaker.net/harbor/projects/2/repositories/base_deb_python3_builder)
 
-This image is based on [base_deb_builder image](/base_deb_builder) and comes with Debian packaging utilities (perl flavour).
+This image is based on [base_deb_builder image](/base_deb_builder) and comes with Debian packaging utilities (python flavour).
 
 
 Packages installed:
 - equivs (2.3.2build1)
-- python3.12-venv (3.12.3-1ubuntu0.15)
+- python3.14-venv (3.14.4-1ubuntu0.1)
 - python3-dev (3.14.3-0ubuntu2)
 - devscripts (2.26.7)
 - python3-venv (3.14.3-0ubuntu2)

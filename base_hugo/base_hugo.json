@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "rsync",
-      "version": "3.2.7-1ubuntu1.5"
+      "version": "3.4.1+ds1-7ubuntu0.3"
     },
     {
       "name": "hugo",
@@ -17,15 +17,15 @@
     },
     {
       "name": "ca-certificates",
-      "version": "20260601~24.04.1"
+      "version": "20260601~26.04.1"
     },
     {
       "name": "openssh-client",
-      "version": "1:9.6p1-3ubuntu13.18"
+      "version": "1:10.2p1-2ubuntu3.4"
     },
     {
       "name": "openssl",
-      "version": "3.0.13-0ubuntu3.11"
+      "version": "3.5.5-1ubuntu3.2"
     }
   ],
   "copy": [
