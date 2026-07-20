@@ -1,5 +1,5 @@
 # Dockerfile generated using karavomarangos - https://git.windmaker.net/a-castellano/karavomarangos
-ARG BASE_IMAGE=ubuntu:noble
+ARG BASE_IMAGE=ubuntu:resolute
 FROM $BASE_IMAGE
 
 MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
@@ -9,8 +9,12 @@ RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y gnupg ca-certificates wget --no-install-recommends && \
   wget -qO- http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub >> /etc/apt/keyrings/windmaker.gpg && \
-  echo "deb [signed-by=/etc/apt/keyrings/windmaker.gpg] http://packages.windmaker.net/ any main" >> /etc/apt/sources.list.d/windmaker.list && \
-  echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/windmaker.gpg] http://packages.windmaker.net/ noble main" >> /etc/apt/sources.list.d/windmaker.list && \
+  echo "Types: deb " > /etc/apt/sources.list.d/windmaker.sources && \
+  echo "URIs: http://packages.windmaker.net " >> /etc/apt/sources.list.d/windmaker.sources && \
+  echo "Suites: any resolute " >> /etc/apt/sources.list.d/windmaker.sources && \
+  echo "Components: main " >> /etc/apt/sources.list.d/windmaker.sources && \
+  echo "Architectures: amd64 " >> /etc/apt/sources.list.d/windmaker.sources && \
+  echo "Signed-By: /etc/apt/keyrings/windmaker.gpg" >> /etc/apt/sources.list.d/windmaker.sources && \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     --no-install-recommends && \

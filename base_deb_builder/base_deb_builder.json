@@ -9,23 +9,23 @@
   "packages": [
     {
       "name": "debhelper",
-      "version": "13.14.1ubuntu5"
+      "version": "13.31ubuntu1"
     },
     {
       "name": "fakeroot",
-      "version": "1.33-1"
+      "version": "1.37.2-1"
     },
     {
       "name": "build-essential",
-      "version": "12.10ubuntu1"
+      "version": "12.12ubuntu2.26.04.1"
     },
     {
       "name": "libdebhelper-perl",
-      "version": "13.14.1ubuntu5"
+      "version": "13.31ubuntu1"
     },
     {
       "name": "dpkg-dev",
-      "version": "1.22.6ubuntu6.6"
+      "version": "1.23.7ubuntu1"
     }
   ],
   "extra_commands": [

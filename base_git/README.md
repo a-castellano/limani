@@ -6,9 +6,9 @@ This image is based on [base image](/base) and comes with git installed.
 
 
 Packages installed:
-- git (1:2.43.0-1ubuntu7.3)
-- ca-certificates (20260601~24.04.1)
-- openssl (3.0.13-0ubuntu3.11)
+- git (1:2.53.0-1ubuntu1)
+- ca-certificates (20260601~26.04.1)
+- openssl (3.5.5-1ubuntu3.2)
 
 Additional features:
 - ca-certificates is required for secure connections.

@@ -8,7 +8,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    libtest-perl-critic-perl=1.04-2 \
+    libtest-perl-critic-perl=1.04-3 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

@@ -6,8 +6,8 @@
 
 
 Packages installed:
-- cron (3.0pl1-184ubuntu2)
-- logrotate (3.21.0-2build1)
+- cron (3.0pl1-200ubuntu1)
+- logrotate (3.22.0-1build1)
 
 Additional features:
 - Used as sidecar for log rotation in our applications.

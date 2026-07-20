@@ -6,10 +6,40 @@
     "surname": "Castellano Vela",
     "email": "alvaro@windmaker.net"
   },
+  "required_repositories": {
+    "name": "caddy",
+    "apt_sources": {
+      "types": [
+        "deb"
+      ],
+      "uris": [
+        "http://packages.windmaker.net/caddy"
+      ],
+      "suites": [
+        "any"
+      ],
+      "components": [
+        "main"
+      ],
+      "architectures": [
+        "amd64"
+      ],
+      "gpg_keyring": "/etc/apt/keyrings/windmaker.gpg"
+    },
+    "gpg_keyring": {
+      "name": "windmaker",
+      "content": {
+        "type": "url",
+        "data": [
+          "http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub"
+        ]
+      }
+    }
+  },
   "packages": [
     {
       "name": "caddy",
-      "version": "2.11.2"
+      "version": "2.11.4"
     }
   ],
   "readme": {

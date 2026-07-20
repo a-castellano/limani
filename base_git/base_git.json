@@ -9,15 +9,15 @@
   "packages": [
     {
       "name": "git",
-      "version": "1:2.43.0-1ubuntu7.3"
+      "version": "1:2.53.0-1ubuntu1"
     },
     {
       "name": "ca-certificates",
-      "version": "20260601~24.04.1"
+      "version": "20260601~26.04.1"
     },
     {
       "name": "openssl",
-      "version": "3.0.13-0ubuntu3.11"
+      "version": "3.5.5-1ubuntu3.2"
     }
   ],
   "readme": {

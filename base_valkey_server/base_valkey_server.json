@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "valkey-server",
-      "version": "7.2.13+dfsg1-0ubuntu0.1"
+      "version": "9.0.4-0ubuntu0.1"
     }
   ],
   "exposed_ports": [

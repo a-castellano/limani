@@ -9,49 +9,49 @@
   "packages": [
     {
       "name": "equivs",
-      "version": "2.3.1"
+      "version": "2.3.2build1"
     },
     {
-      "name": "python3.12-venv",
-      "version": "3.12.3-1ubuntu0.15"
+      "name": "python3.14-venv",
+      "version": "3.14.4-1ubuntu0.1"
     },
     {
       "name": "python3-dev",
-      "version": "3.12.3-0ubuntu2.1"
+      "version": "3.14.3-0ubuntu2"
     },
     {
       "name": "devscripts",
-      "version": "2.23.7ubuntu0.2"
+      "version": "2.26.7"
     },
     {
       "name": "python3-venv",
-      "version": "3.12.3-0ubuntu2.1"
+      "version": "3.14.3-0ubuntu2"
     },
     {
       "name": "libffi-dev",
-      "version": "3.4.6-1build1"
+      "version": "3.5.2-4"
     },
     {
       "name": "python3-setuptools",
-      "version": "68.1.2-2ubuntu1.2"
+      "version": "78.1.1-0.1build1"
     },
     {
       "name": "python3-pip",
-      "version": "24.0+dfsg-1ubuntu1.3"
+      "version": "25.1.1+dfsg-1ubuntu2"
     },
     {
       "name": "ca-certificates",
-      "version": "20260601~24.04.1"
+      "version": "20260601~26.04.1"
     }
   ],
   "extra_commands": [
     "python3 -m venv /venv",
-    "/venv/bin/pip install --no-cache-dir hatch==1.16.3",
+    "/venv/bin/pip install --no-cache-dir hatch==1.17.1",
     "ln -s /venv/bin/hatch /usr/local/bin/hatch",
     "echo -e \"DEBEMAIL=\\\"alvaro@windmaker.net\\\"\\nDEBFULLNAME=\\\"Álvaro Castellano Vela\\\"\\nexport DEBEMAIL DEBFULLNAME\\n\" >> ~/.bashrc.backup"
   ],
   "readme": {
-    "description": "This image is based on [base_deb_builder image](/base_deb_builder) and comes with Debian packaging utilities (perl flavour).",
+    "description": "This image is based on [base_deb_builder image](/base_deb_builder) and comes with Debian packaging utilities (python flavour).",
     "additional_features": [
       "Creates a Python virtual environment at `/venv` with hatch for packaging",
       "Configures DEBEMAIL and DEBFULLNAME environment variables"

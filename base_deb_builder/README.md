@@ -6,11 +6,11 @@ This image is based on [base image](/base) and comes with Debian packaging utili
 
 
 Packages installed:
-- debhelper (13.14.1ubuntu5)
-- fakeroot (1.33-1)
-- build-essential (12.10ubuntu1)
-- libdebhelper-perl (13.14.1ubuntu5)
-- dpkg-dev (1.22.6ubuntu6.6)
+- debhelper (13.31ubuntu1)
+- fakeroot (1.37.2-1)
+- build-essential (12.12ubuntu2.26.04.1)
+- libdebhelper-perl (13.31ubuntu1)
+- dpkg-dev (1.23.7ubuntu1)
 
 Additional features:
 - Configures DEBEMAIL and DEBFULLNAME environment variables

@@ -6,10 +6,10 @@ This image is based on [base_deb_builder image](/base_deb_builder) and comes wit
 
 
 Packages installed:
-- cmake (3.28.3-1build7)
-- bison (2:3.8.2+dfsg-1build2)
-- flex (2.6.4-8.2build1)
-- gcc (4:13.2.0-7ubuntu1)
+- cmake (4.2.3-2ubuntu2)
+- bison (2:3.8.2+dfsg-1build4)
+- flex (2.6.4-8.2build2)
+- gcc (4:15.2.0-5ubuntu1)
 
 Additional features:
 - Configures DEBEMAIL and DEBFULLNAME environment variables

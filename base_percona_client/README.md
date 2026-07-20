@@ -7,7 +7,7 @@ This image is based on [base image](/base) and comes with percona-server-client 
 
 Packages installed:
 - daedalus-project-mysql-utils (0.4-7)
-- percona-server-client (8.4.7-7-1.noble)
+- percona-server-client (8.4.10-10-1.resolute)
 
 Additional features:
 - **daedalus-project-mysql-utils** allows you to change mysql root password

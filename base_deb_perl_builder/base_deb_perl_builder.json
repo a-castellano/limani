@@ -9,19 +9,19 @@
   "packages": [
     {
       "name": "libmodule-build-tiny-perl",
-      "version": "0.047-1"
+      "version": "0.052-1"
     },
     {
       "name": "libmodule-install-perl",
-      "version": "1.21-1"
+      "version": "1.21-2"
     },
     {
       "name": "libmodule-build-perl",
-      "version": "0.423400-2"
+      "version": "0.423400-3"
     },
     {
       "name": "dh-make-perl",
-      "version": "0.124"
+      "version": "0.130"
     },
     {
       "name": "libgit-wrapper-perl",

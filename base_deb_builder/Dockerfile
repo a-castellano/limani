@@ -8,11 +8,11 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    debhelper=13.14.1ubuntu5 \
-    fakeroot=1.33-1 \
-    build-essential=12.10ubuntu1 \
-    libdebhelper-perl=13.14.1ubuntu5 \
-    dpkg-dev=1.22.6ubuntu6.6 \
+    debhelper=13.31ubuntu1 \
+    fakeroot=1.37.2-1 \
+    build-essential=12.12ubuntu2.26.04.1 \
+    libdebhelper-perl=13.31ubuntu1 \
+    dpkg-dev=1.23.7ubuntu1 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

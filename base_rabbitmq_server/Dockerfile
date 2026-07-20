@@ -10,7 +10,7 @@ COPY base_rabbitmq_server/files/enabled_plugins /tmp/enabled_plugins
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    rabbitmq-server=3.12.1-1ubuntu1.2 \
+    rabbitmq-server=4.0.5-10ubuntu5 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
