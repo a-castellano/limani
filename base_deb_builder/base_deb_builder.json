@@ -17,7 +17,7 @@
     },
     {
       "name": "build-essential",
-      "version": "12.12ubuntu2.26.04.1"
+      "version": "12.12ubuntu2.26.04.2"
     },
     {
       "name": "libdebhelper-perl",

@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "nginx-full",
-      "version": "1.28.3-2ubuntu1.6"
+      "version": "1.28.3-2ubuntu1.8"
     },
     {
       "name": "ca-certificates",

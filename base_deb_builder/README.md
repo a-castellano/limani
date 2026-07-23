@@ -8,7 +8,7 @@ This image is based on [base image](/base) and comes with Debian packaging utili
 Packages installed:
 - debhelper (13.31ubuntu1)
 - fakeroot (1.37.2-1)
-- build-essential (12.12ubuntu2.26.04.1)
+- build-essential (12.12ubuntu2.26.04.2)
 - libdebhelper-perl (13.31ubuntu1)
 - dpkg-dev (1.23.7ubuntu1)
 

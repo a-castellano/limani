@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "php8.5-common",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-imagick",
@@ -17,7 +17,7 @@
     },
     {
       "name": "php8.5-gd",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-igbinary",
@@ -25,55 +25,55 @@
     },
     {
       "name": "php8.5-zip",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-mysql",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-intl",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-gmp",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-bz2",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-xml",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-fpm",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-curl",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-mbstring",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-bcmath",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-cli",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-pgsql",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "php8.5-readline",
-      "version": "8.5.4-0ubuntu1.1"
+      "version": "8.5.4-0ubuntu1.2"
     },
     {
       "name": "ca-certificates",

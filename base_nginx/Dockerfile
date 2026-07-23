@@ -8,7 +8,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    nginx-full=1.28.3-2ubuntu1.6 \
+    nginx-full=1.28.3-2ubuntu1.8 \
     ca-certificates=20260601~26.04.1 \
     openssl=3.5.5-1ubuntu3.2 \
     --no-install-recommends && \

@@ -10,7 +10,7 @@ RUN \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     debhelper=13.31ubuntu1 \
     fakeroot=1.37.2-1 \
-    build-essential=12.12ubuntu2.26.04.1 \
+    build-essential=12.12ubuntu2.26.04.2 \
     libdebhelper-perl=13.31ubuntu1 \
     dpkg-dev=1.23.7ubuntu1 \
     --no-install-recommends && \
