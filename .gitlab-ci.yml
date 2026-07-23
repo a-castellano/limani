@@ -16,6 +16,14 @@ build_base_image:
     paths:
       - timestamp
     expire_in: 240 minutes
+build_base_otelcol_image:
+  stage: build_base_inherited_images
+  script:
+    - export IMAGE_NAME=base_otelcol
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  dependencies:
+    - build_base_image
 build_base_git_image:
   stage: build_base_inherited_images
   script:

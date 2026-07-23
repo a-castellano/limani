@@ -1,0 +1,31 @@
+{
+  "name": "base_otelcol",
+  "base_image": "harbor.windmaker.net/limani/base",
+  "maintainer": {
+    "name": "Álvaro",
+    "surname": "Castellano Vela",
+    "email": "alvaro@windmaker.net"
+  },
+  "packages": [
+    {
+      "name": "otelcol-contrib",
+      "version": "0.157.0"
+    }
+  ],
+  "exposed_ports": [
+    4317,
+    4318,
+    55679
+  ],
+  "command": [
+    "/usr/bin/otelcol-contrib",
+    "--config",
+    "/etc/otelcol-contrib/config.yaml"
+  ],
+  "readme": {
+    "description": "OpenTelemetry Collector image.",
+    "additional_features": [
+      "Exposed ports: 4317, 4318 and 55679"
+    ]
+  }
+}
