@@ -17,7 +17,7 @@
     },
     {
       "name": "openssl",
-      "version": "3.5.5-1ubuntu3.2"
+      "version": "3.5.5-1ubuntu3.3"
     }
   ],
   "copy": [

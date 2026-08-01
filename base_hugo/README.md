@@ -10,7 +10,7 @@ Packages installed:
 - hugo (0.164.0)
 - ca-certificates (20260601~26.04.1)
 - openssh-client (1:10.2p1-2ubuntu3.5)
-- openssl (3.5.5-1ubuntu3.2)
+- openssl (3.5.5-1ubuntu3.3)
 
 Additional features:
 - Added ssh and rsync packages for deployment purposes.

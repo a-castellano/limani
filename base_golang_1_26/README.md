@@ -19,7 +19,7 @@ Packages installed:
 - golang-1.26-go (1.26.5-1longsleep1+jammy)
 - ca-certificates (20260601~26.04.1)
 - dh-golang (1.63build1)
-- openssl (3.5.5-1ubuntu3.2)
+- openssl (3.5.5-1ubuntu3.3)
 
 Additional features:
 - Symlink for go binary and DEBEMAIL/DEBFULLNAME in bashrc
