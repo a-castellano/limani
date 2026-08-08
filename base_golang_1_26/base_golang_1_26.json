@@ -75,7 +75,7 @@
     },
     {
       "name": "bind9-host",
-      "version": "1:9.20.18-1ubuntu2.1"
+      "version": "1:9.20.24-1ubuntu0.1"
     },
     {
       "name": "golang-1.26-go",

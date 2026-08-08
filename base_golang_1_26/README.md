@@ -15,7 +15,7 @@ Packages installed:
 - make (4.4.1-3)
 - clang (1:21.1.6-71)
 - git-crypt (0.8.0-1)
-- bind9-host (1:9.20.18-1ubuntu2.1)
+- bind9-host (1:9.20.24-1ubuntu0.1)
 - golang-1.26-go (1.26.5-1longsleep1+jammy)
 - ca-certificates (20260601~26.04.1)
 - dh-golang (1.63build1)

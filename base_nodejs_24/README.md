@@ -6,7 +6,7 @@ This image is based on Limani base image, and comes with nodejs 24 installed.
 
 
 Packages installed:
-- nodejs (24.18.1-1nodesource1)
+- nodejs (24.19.0-1nodesource1)
 
 Additional features:
 - Adds repo `https://deb.nodesource.com/node_24.x nodistro main`
