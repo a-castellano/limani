@@ -43,7 +43,7 @@
     },
     {
       "name": "percona-server-client",
-      "version": "8.4.10-10-1.resolute"
+      "version": "8.4.11-11-1.resolute"
     }
   ],
   "readme": {

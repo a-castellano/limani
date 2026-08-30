@@ -25,7 +25,7 @@ Packages installed:
 - php8.5-readline (8.5.4-0ubuntu1.2)
 - ca-certificates (20260601~26.04.1)
 - php8.5-redis (6.2.0-1ubuntu1)
-- openssl (3.5.5-1ubuntu3.3)
+- openssl (3.5.5-1ubuntu3.4)
 
 Additional features:
 - Port 9000 exposed

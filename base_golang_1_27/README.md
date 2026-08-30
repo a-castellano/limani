@@ -1,8 +1,8 @@
-# base_golang_1_26
+# base_golang_1_27
 
-[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://harbor.windmaker.net/harbor/projects/2/repositories/base_golang_1_26)
+[![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://harbor.windmaker.net/harbor/projects/2/repositories/base_golang_1_27)
 
-Golang 1.26 image with Debian packaging tools (dh-golang, nfpm, make, clang). Based on base_deb_builder.
+Golang 1.27 image with Debian packaging tools (dh-golang, nfpm, make, clang). Based on base_deb_builder.
 
 
 Packages installed:
@@ -11,12 +11,12 @@ Packages installed:
 - golang-golang-x-sys-dev (0.38.0-1)
 - sudo (1.9.17p2-1ubuntu3)
 - libclang-rt-18-dev (1:18.1.8-20ubuntu8)
-- golang-1.26 (1.26.7-1longsleep1+jammy)
+- golang-1.27 (1.27.0-1longsleep1+jammy)
 - make (4.4.1-3)
 - clang (1:21.1.6-71)
 - git-crypt (0.8.0-1)
+- golang-1.27-go (1.27.0-1longsleep1+jammy)
 - bind9-host (1:9.20.24-1ubuntu0.2)
-- golang-1.26-go (1.26.7-1longsleep1+jammy)
 - ca-certificates (20260601~26.04.1)
 - dh-golang (1.63build1)
 - openssl (3.5.5-1ubuntu3.4)

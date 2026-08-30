@@ -6,9 +6,9 @@ This image is based on base and comes with nginx installed.
 
 
 Packages installed:
-- nginx-full (1.28.3-2ubuntu1.8)
+- nginx-full (1.28.3-2ubuntu1.10)
 - ca-certificates (20260601~26.04.1)
-- openssl (3.5.5-1ubuntu3.3)
+- openssl (3.5.5-1ubuntu3.4)
 
 Additional features:
 - Exposes ports 80 (HTTP) and 443 (HTTPS)

@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "curl",
-      "version": "8.18.0-1ubuntu2.3"
+      "version": "8.18.0-1ubuntu2.4"
     },
     {
       "name": "ca-certificates",
@@ -17,7 +17,7 @@
     },
     {
       "name": "openssl",
-      "version": "3.5.5-1ubuntu3.3"
+      "version": "3.5.5-1ubuntu3.4"
     }
   ],
   "readme": {

@@ -99,6 +99,17 @@ build_base_golang_1_26_image:
       - timestamp
   dependencies:
     - build_base_image
+build_base_golang_1_27_image:
+  stage: build_base_inherited_images_2nd_gen
+  script:
+    - export IMAGE_NAME=base_golang_1_27
+    - export IS_BASE_IMAGE=0
+    - docker-build
+  artifacts:
+    paths:
+      - timestamp
+  dependencies:
+    - build_base_image
 build_base_curl_image:
   stage: build_base_inherited_images
   script:

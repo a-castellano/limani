@@ -24,7 +24,7 @@ RUN \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     percona-telemetry-agent=1.0.14-1.resolute \
     daedalus-project-mysql-utils=0.4-7 \
-    percona-server-server=8.4.10-10-1.resolute \
+    percona-server-server=8.4.11-11-1.resolute \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

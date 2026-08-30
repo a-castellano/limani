@@ -39,7 +39,7 @@
   "packages": [
     {
       "name": "containerd.io",
-      "version": "2.3.3-1~ubuntu.26.04~resolute"
+      "version": "2.3.4-1~ubuntu.26.04~resolute"
     },
     {
       "name": "docker-ce",

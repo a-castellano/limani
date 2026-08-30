@@ -8,9 +8,9 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    curl=8.18.0-1ubuntu2.3 \
+    curl=8.18.0-1ubuntu2.4 \
     ca-certificates=20260601~26.04.1 \
-    openssl=3.5.5-1ubuntu3.3 \
+    openssl=3.5.5-1ubuntu3.4 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

@@ -17,7 +17,7 @@ RUN \
   echo "Signed-By: /etc/apt/keyrings/windmaker.gpg" >> /etc/apt/sources.list.d/docker.sources && \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    containerd.io=2.3.3-1~ubuntu.26.04~resolute \
+    containerd.io=2.3.4-1~ubuntu.26.04~resolute \
     docker-ce=5:29.7.2-1~ubuntu.26.04~resolute \
     git-crypt=0.8.0-1 \
     docker-ce-cli=5:29.7.2-1~ubuntu.26.04~resolute \

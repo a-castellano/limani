@@ -1,5 +1,5 @@
 {
-  "name": "base_golang_1_26",
+  "name": "base_golang_1_27",
   "base_image": "harbor.windmaker.net/limani/base_deb_builder",
   "maintainer": {
     "name": "Álvaro",
@@ -58,8 +58,8 @@
       "version": "1:18.1.8-20ubuntu8"
     },
     {
-      "name": "golang-1.26",
-      "version": "1.26.7-1longsleep1+jammy"
+      "name": "golang-1.27",
+      "version": "1.27.0-1longsleep1+jammy"
     },
     {
       "name": "make",
@@ -74,12 +74,12 @@
       "version": "0.8.0-1"
     },
     {
-      "name": "bind9-host",
-      "version": "1:9.20.24-1ubuntu0.2"
+      "name": "golang-1.27-go",
+      "version": "1.27.0-1longsleep1+jammy"
     },
     {
-      "name": "golang-1.26-go",
-      "version": "1.26.7-1longsleep1+jammy"
+      "name": "bind9-host",
+      "version": "1:9.20.24-1ubuntu0.2"
     },
     {
       "name": "ca-certificates",
@@ -95,11 +95,11 @@
     }
   ],
   "extra_commands": [
-    "ln -s /usr/lib/go-1.26/bin/go /usr/bin/go",
+    "ln -s /usr/lib/go-1.27/bin/go /usr/bin/go",
     "echo -e \"DEBEMAIL=\\\"alvaro@windmaker.net\\\"\\nDEBFULLNAME=\\\"Álvaro Castellano Vela\\\"\\nexport DEBEMAIL DEBFULLNAME\\n\" >> ~/.bashrc.backup"
   ],
   "readme": {
-    "description": "Golang 1.26 image with Debian packaging tools (dh-golang, nfpm, make, clang). Based on base_deb_builder.",
+    "description": "Golang 1.27 image with Debian packaging tools (dh-golang, nfpm, make, clang). Based on base_deb_builder.",
     "additional_features": [
       "Symlink for go binary and DEBEMAIL/DEBFULLNAME in bashrc",
       "Golang backports PPA and many pinned packages"
