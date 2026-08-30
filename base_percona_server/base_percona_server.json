@@ -39,7 +39,7 @@
   "packages": [
     {
       "name": "percona-telemetry-agent",
-      "version": "1.0.14-1.resolute"
+      "version": "1.0.16-1.resolute"
     },
     {
       "name": "daedalus-project-mysql-utils",

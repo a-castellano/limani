@@ -22,7 +22,7 @@ RUN \
   echo "Signed-By: /etc/apt/keyrings/windmaker.gpg" >> /etc/apt/sources.list.d/percona-mysql.sources && \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    percona-telemetry-agent=1.0.14-1.resolute \
+    percona-telemetry-agent=1.0.16-1.resolute \
     daedalus-project-mysql-utils=0.4-7 \
     percona-server-server=8.4.11-11-1.resolute \
     --no-install-recommends && \
