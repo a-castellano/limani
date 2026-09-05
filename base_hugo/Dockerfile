@@ -10,10 +10,10 @@ RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     rsync=3.4.1+ds1-7ubuntu0.3 \
-    hugo=0.164.0 \
+    hugo=0.165.0 \
     ca-certificates=20260601~26.04.1 \
-    openssh-client=1:10.2p1-2ubuntu3.5 \
-    openssl=3.5.5-1ubuntu3.4 \
+    openssh-client=1:10.2p1-2ubuntu3.6 \
+    openssl=3.5.5-1ubuntu3.5 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

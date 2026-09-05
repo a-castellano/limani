@@ -13,7 +13,7 @@
     },
     {
       "name": "hugo",
-      "version": "0.164.0"
+      "version": "0.165.0"
     },
     {
       "name": "ca-certificates",
@@ -21,11 +21,11 @@
     },
     {
       "name": "openssh-client",
-      "version": "1:10.2p1-2ubuntu3.5"
+      "version": "1:10.2p1-2ubuntu3.6"
     },
     {
       "name": "openssl",
-      "version": "3.5.5-1ubuntu3.4"
+      "version": "3.5.5-1ubuntu3.5"
     }
   ],
   "copy": [
