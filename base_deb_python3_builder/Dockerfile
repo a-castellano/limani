@@ -9,7 +9,7 @@ RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     equivs=2.3.2build1 \
-    python3.14-venv=3.14.4-1ubuntu0.1 \
+    python3.14-venv=3.14.4-1ubuntu0.2 \
     python3-dev=3.14.3-0ubuntu2 \
     devscripts=2.26.7 \
     python3-venv=3.14.3-0ubuntu2 \

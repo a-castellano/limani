@@ -7,7 +7,7 @@ This image is based on [base_deb_builder image](/base_deb_builder) and comes wit
 
 Packages installed:
 - equivs (2.3.2build1)
-- python3.14-venv (3.14.4-1ubuntu0.1)
+- python3.14-venv (3.14.4-1ubuntu0.2)
 - python3-dev (3.14.3-0ubuntu2)
 - devscripts (2.26.7)
 - python3-venv (3.14.3-0ubuntu2)
