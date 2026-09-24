@@ -8,7 +8,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    libxml2-utils=2.15.2+dfsg-0.1ubuntu0.1 \
+    libxml2-utils=2.15.2+dfsg-0.1ubuntu0.2 \
     xmlstarlet=1.6.1-5build1 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \

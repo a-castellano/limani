@@ -20,7 +20,7 @@ RUN \
     git=1:2.53.0-1ubuntu1 \
     nfpm=2.47.0 \
     golang-golang-x-sys-dev=0.38.0-1 \
-    sudo=1.9.17p2-1ubuntu3 \
+    sudo=1.9.17p2-1ubuntu3.1 \
     libclang-rt-18-dev=1:18.1.8-20ubuntu8 \
     golang-1.26=1.26.8-1longsleep1+jammy \
     make=4.4.1-3 \

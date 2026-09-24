@@ -9,7 +9,7 @@ RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     cmake=4.2.3-2ubuntu2 \
-    bison=2:3.8.2+dfsg-1build4 \
+    bison=2:3.8.2+dfsg-1ubuntu0.26.04.1 \
     flex=2.6.4-8.2build2 \
     gcc=4:15.2.0-5ubuntu1 \
     --no-install-recommends && \

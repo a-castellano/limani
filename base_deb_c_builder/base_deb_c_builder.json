@@ -13,7 +13,7 @@
     },
     {
       "name": "bison",
-      "version": "2:3.8.2+dfsg-1build4"
+      "version": "2:3.8.2+dfsg-1ubuntu0.26.04.1"
     },
     {
       "name": "flex",
