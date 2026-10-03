@@ -30,7 +30,7 @@ RUN \
     bind9-host=1:9.20.24-1ubuntu0.3 \
     ca-certificates=20260601~26.04.1 \
     dh-golang=1.63build1 \
-    openssl=3.5.5-1ubuntu3.5 \
+    openssl=3.5.5-1ubuntu3.7 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
