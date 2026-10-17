@@ -51,7 +51,7 @@
     },
     {
       "name": "sudo",
-      "version": "1.9.17p2-1ubuntu3.1"
+      "version": "1.9.17p2-1ubuntu3.2"
     },
     {
       "name": "libclang-rt-18-dev",
@@ -59,7 +59,7 @@
     },
     {
       "name": "golang-1.27",
-      "version": "1.27.1-1longsleep1+jammy"
+      "version": "1.27.2-1longsleep1+jammy"
     },
     {
       "name": "make",
@@ -75,11 +75,11 @@
     },
     {
       "name": "golang-1.27-go",
-      "version": "1.27.1-1longsleep1+jammy"
+      "version": "1.27.2-1longsleep1+jammy"
     },
     {
       "name": "bind9-host",
-      "version": "1:9.20.24-1ubuntu0.3"
+      "version": "1:9.20.24-1ubuntu0.4"
     },
     {
       "name": "ca-certificates",

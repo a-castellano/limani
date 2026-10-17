@@ -6,7 +6,7 @@ RabbitMQ server image with custom config and plugins. Ports 4369, 5671, 5672, 25
 
 
 Packages installed:
-- rabbitmq-server (4.0.5-10ubuntu5)
+- rabbitmq-server (4.0.5-10ubuntu5.2)
 
 Additional features:
 - Custom rabbitmq.conf and enabled_plugins copied into image

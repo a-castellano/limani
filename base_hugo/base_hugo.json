@@ -21,7 +21,7 @@
     },
     {
       "name": "openssh-client",
-      "version": "1:10.2p1-2ubuntu3.6"
+      "version": "1:10.2p1-2ubuntu3.8"
     },
     {
       "name": "openssl",

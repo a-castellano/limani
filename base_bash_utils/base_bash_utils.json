@@ -9,7 +9,7 @@
   "packages": [
     {
       "name": "sudo",
-      "version": "1.9.17p2-1ubuntu3.1"
+      "version": "1.9.17p2-1ubuntu3.2"
     },
     {
       "name": "ruby",

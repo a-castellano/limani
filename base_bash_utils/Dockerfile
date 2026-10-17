@@ -8,7 +8,7 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    sudo=1.9.17p2-1ubuntu3.1 \
+    sudo=1.9.17p2-1ubuntu3.2 \
     ruby=1:3.3build1 \
     shunit2=2.1.8-4build1 \
     make=4.4.1-3 \
