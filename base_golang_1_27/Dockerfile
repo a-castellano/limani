@@ -17,7 +17,7 @@ RUN \
   echo "Signed-By: /etc/apt/keyrings/windmaker.gpg" >> /etc/apt/sources.list.d/golang.sources && \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    git=1:2.53.0-1ubuntu1 \
+    git=1:2.53.0-1ubuntu1.1 \
     nfpm=2.47.0 \
     golang-golang-x-sys-dev=0.38.0-1 \
     sudo=1.9.17p2-1ubuntu3.2 \
@@ -28,7 +28,7 @@ RUN \
     git-crypt=0.8.0-1 \
     golang-1.27-go=1.27.2-1longsleep1+jammy \
     bind9-host=1:9.20.24-1ubuntu0.4 \
-    ca-certificates=20260601~26.04.1 \
+    ca-certificates=20260816ubuntu0.26.04.1 \
     dh-golang=1.63build1 \
     openssl=3.5.5-1ubuntu3.7 \
     --no-install-recommends && \

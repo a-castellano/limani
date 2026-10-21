@@ -13,7 +13,7 @@
     },
     {
       "name": "ca-certificates",
-      "version": "20260601~26.04.1"
+      "version": "20260816ubuntu0.26.04.1"
     },
     {
       "name": "openssl",

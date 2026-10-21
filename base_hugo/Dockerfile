@@ -11,7 +11,7 @@ RUN \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     rsync=3.4.1+ds1-7ubuntu0.3 \
     hugo=0.165.0 \
-    ca-certificates=20260601~26.04.1 \
+    ca-certificates=20260816ubuntu0.26.04.1 \
     openssh-client=1:10.2p1-2ubuntu3.8 \
     openssl=3.5.5-1ubuntu3.7 \
     --no-install-recommends && \

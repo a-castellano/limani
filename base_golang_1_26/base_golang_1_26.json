@@ -39,7 +39,7 @@
   "packages": [
     {
       "name": "git",
-      "version": "1:2.53.0-1ubuntu1"
+      "version": "1:2.53.0-1ubuntu1.1"
     },
     {
       "name": "nfpm",
@@ -83,7 +83,7 @@
     },
     {
       "name": "ca-certificates",
-      "version": "20260601~26.04.1"
+      "version": "20260816ubuntu0.26.04.1"
     },
     {
       "name": "dh-golang",

@@ -14,7 +14,7 @@ RUN \
     make=4.4.1-3 \
     shfmt=3.12.0-1 \
     shellcheck=0.11.0-2 \
-    ca-certificates=20260601~26.04.1 \
+    ca-certificates=20260816ubuntu0.26.04.1 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget  && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

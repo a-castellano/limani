@@ -14,7 +14,7 @@ Packages installed:
 - libffi-dev (3.5.2-4)
 - python3-setuptools (78.1.1-0.1build1)
 - python3-pip (25.1.1+dfsg-1ubuntu2)
-- ca-certificates (20260601~26.04.1)
+- ca-certificates (20260816ubuntu0.26.04.1)
 
 Additional features:
 - Creates a Python virtual environment at `/venv` with hatch for packaging
