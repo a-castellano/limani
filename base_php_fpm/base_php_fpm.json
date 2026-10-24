@@ -60,6 +60,10 @@
       "version": "8.5.4-0ubuntu1.5"
     },
     {
+      "name": "php8.5-apcu",
+      "version": "5.1.24-1ubuntu1"
+    },
+    {
       "name": "php8.5-bcmath",
       "version": "8.5.4-0ubuntu1.5"
     },

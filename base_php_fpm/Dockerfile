@@ -21,6 +21,7 @@ RUN \
     php8.5-fpm=8.5.4-0ubuntu1.5 \
     php8.5-curl=8.5.4-0ubuntu1.5 \
     php8.5-mbstring=8.5.4-0ubuntu1.5 \
+    php8.5-apcu=5.1.24-1ubuntu1 \
     php8.5-bcmath=8.5.4-0ubuntu1.5 \
     php8.5-cli=8.5.4-0ubuntu1.5 \
     php8.5-pgsql=8.5.4-0ubuntu1.5 \
