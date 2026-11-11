@@ -24,7 +24,7 @@ Packages installed:
 - php8.5-cli (8.5.4-0ubuntu1.5)
 - php8.5-pgsql (8.5.4-0ubuntu1.5)
 - php8.5-readline (8.5.4-0ubuntu1.5)
-- ca-certificates (20260816ubuntu0.26.04.1)
+- ca-certificates (20260816ubuntu0.26.04.2)
 - php8.5-redis (6.2.0-1ubuntu1)
 - openssl (3.5.5-1ubuntu3.7)
 

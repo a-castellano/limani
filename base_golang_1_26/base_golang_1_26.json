@@ -43,7 +43,7 @@
     },
     {
       "name": "nfpm",
-      "version": "2.47.0"
+      "version": "2.48.0"
     },
     {
       "name": "golang-golang-x-sys-dev",
@@ -75,7 +75,7 @@
     },
     {
       "name": "bind9-host",
-      "version": "1:9.20.24-1ubuntu0.4"
+      "version": "1:9.20.24-1ubuntu0.5"
     },
     {
       "name": "golang-1.26-go",
@@ -83,7 +83,7 @@
     },
     {
       "name": "ca-certificates",
-      "version": "20260816ubuntu0.26.04.1"
+      "version": "20260816ubuntu0.26.04.2"
     },
     {
       "name": "dh-golang",

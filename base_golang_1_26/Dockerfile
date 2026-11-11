@@ -18,7 +18,7 @@ RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
     git=1:2.53.0-1ubuntu1.1 \
-    nfpm=2.47.0 \
+    nfpm=2.48.0 \
     golang-golang-x-sys-dev=0.38.0-1 \
     sudo=1.9.17p2-1ubuntu3.2 \
     libclang-rt-18-dev=1:18.1.8-20ubuntu8 \
@@ -26,9 +26,9 @@ RUN \
     make=4.4.1-3 \
     clang=1:21.1.6-71 \
     git-crypt=0.8.0-1 \
-    bind9-host=1:9.20.24-1ubuntu0.4 \
+    bind9-host=1:9.20.24-1ubuntu0.5 \
     golang-1.26-go=1.26.10-1longsleep1+jammy \
-    ca-certificates=20260816ubuntu0.26.04.1 \
+    ca-certificates=20260816ubuntu0.26.04.2 \
     dh-golang=1.63build1 \
     openssl=3.5.5-1ubuntu3.7 \
     --no-install-recommends && \

@@ -13,11 +13,11 @@
     },
     {
       "name": "hugo",
-      "version": "0.165.0"
+      "version": "0.169.0"
     },
     {
       "name": "ca-certificates",
-      "version": "20260816ubuntu0.26.04.1"
+      "version": "20260816ubuntu0.26.04.2"
     },
     {
       "name": "openssh-client",

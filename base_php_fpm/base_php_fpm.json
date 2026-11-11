@@ -81,7 +81,7 @@
     },
     {
       "name": "ca-certificates",
-      "version": "20260816ubuntu0.26.04.1"
+      "version": "20260816ubuntu0.26.04.2"
     },
     {
       "name": "php8.5-redis",
