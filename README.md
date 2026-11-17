@@ -27,7 +27,7 @@ Docker manifests of images used by one or more of my personal projects.
 
 ### Services
 
-- [base_valkey_server](/base_valkey_server): base image containing Valkey server (9.0.4-0ubuntu0.2) with port 6379 exposed.
+- [base_valkey_server](/base_valkey_server): base image containing Valkey server (9.0.6-0ubuntu0.1) with port 6379 exposed.
 - [base_rabbitmq_server](/base_rabbitmq_server): base image containing RabbitMQ server (4.0.5-10ubuntu5.2) with custom configuration and ports 4369, 5671, 5672, 25672 exposed.
 - [base_percona_server](/base_percona_server): base image with Percona server (8.4.11-11-1.resolute), daedalus-project-mysql-utils (0.4-7) and percona-telemetry-agent (1.0.16-1.resolute), default password 'L3tm3_in', runs as user 'mysql' with port 3306 exposed.
 - [base_logrotate](/base_logrotate): base image with cron (3.0pl1-200ubuntu1) and logrotate (3.22.0-1build1).
