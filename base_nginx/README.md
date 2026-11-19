@@ -6,7 +6,7 @@ This image is based on base and comes with nginx installed.
 
 
 Packages installed:
-- nginx-full (1.28.3-2ubuntu1.12)
+- nginx-full (1.28.3-2ubuntu1.13)
 - ca-certificates (20260816ubuntu0.26.04.2)
 - openssl (3.5.5-1ubuntu3.7)
 
