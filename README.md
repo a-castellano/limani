@@ -32,8 +32,8 @@ Docker manifests of images used by one or more of my personal projects.
 - [base_percona_server](/base_percona_server): base image with Percona server (8.4.11-11-1.resolute), daedalus-project-mysql-utils (0.4-7) and percona-telemetry-agent (1.0.16-1.resolute), default password 'L3tm3_in', runs as user 'mysql' with port 3306 exposed.
 - [base_logrotate](/base_logrotate): base image with cron (3.0pl1-200ubuntu1) and logrotate (3.22.0-1build1).
 - [base_caddy](/base_caddy): base image with Caddy web server (2.11.9).
-- [base_nginx](/base_nginx): base image with nginx-full (1.28.3-2ubuntu1.12), ca-certificates (20260816ubuntu0.26.04.2), and openssl (3.5.5-1ubuntu3.7) with ports 80 and 443 exposed.
-- [base_php_fpm](/base_php_fpm): base image with PHP 8.5 FPM (8.5.4-0ubuntu1.5) and common extensions with port 9000 exposed.
+- [base_nginx](/base_nginx): base image with nginx-full (1.28.3-2ubuntu1.14), ca-certificates (20260816ubuntu0.26.04.2), and openssl (3.5.5-1ubuntu3.7) with ports 80 and 443 exposed.
+- [base_php_fpm](/base_php_fpm): base image with PHP 8.5 FPM (8.5.4-0ubuntu1.6) and common extensions with port 9000 exposed.
 - [base_mailhog](/base_mailhog): image based on base_golang_1_26 with MailHog (v1.0.1) and stunnel4 (3:5.77-1) SSL/TLS tunneling service.
 - [base_otelcol](/base_otelcol): base image with the OpenTelemetry Collector Contrib distribution (otelcol-contrib 0.157.0) with ports 4317, 4318 and 55679 exposed.
 
