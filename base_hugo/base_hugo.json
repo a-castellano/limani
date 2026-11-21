@@ -1,6 +1,6 @@
 {
   "name": "base_hugo",
-  "base_image": "harbor.windmaker.net/limani/base_golang_1_26",
+  "base_image": "harbor.windmaker.net/limani/base_golang_1_27",
   "maintainer": {
     "name": "Álvaro",
     "surname": "Castellano Vela",
@@ -13,7 +13,7 @@
     },
     {
       "name": "hugo",
-      "version": "0.169.0"
+      "version": "0.170.1"
     },
     {
       "name": "ca-certificates",
@@ -40,7 +40,7 @@
     "ln -s /usr/local/lib/dart-sass/sass /usr/local/bin/sass"
   ],
   "readme": {
-    "description": "This image is based on [base_golang_1_26 image](/base_golang_1_26) and comes with Hugo installed.",
+    "description": "This image is based on [base_golang_1_27 image](/base_golang_1_27) and comes with Hugo installed.",
     "additional_features": [
       "Added ssh and rsync packages for deployment purposes.",
       "dart-sass is also installed, check CI config."

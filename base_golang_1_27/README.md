@@ -7,7 +7,7 @@ Golang 1.27 image with Debian packaging tools (dh-golang, nfpm, make, clang). Ba
 
 Packages installed:
 - git (1:2.53.0-1ubuntu1.1)
-- nfpm (2.48.0)
+- nfpm (2.49.0)
 - golang-golang-x-sys-dev (0.38.0-1)
 - sudo (1.9.17p2-1ubuntu3.2)
 - libclang-rt-18-dev (1:18.1.8-20ubuntu8)

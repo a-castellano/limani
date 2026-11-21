@@ -2,12 +2,12 @@
 
 [![Docker image](https://img.shields.io/badge/docker-latest-blue.svg)](https://harbor.windmaker.net/harbor/projects/2/repositories/base_hugo)
 
-This image is based on [base_golang_1_26 image](/base_golang_1_26) and comes with Hugo installed.
+This image is based on [base_golang_1_27 image](/base_golang_1_27) and comes with Hugo installed.
 
 
 Packages installed:
 - rsync (3.4.1+ds1-7ubuntu0.3)
-- hugo (0.169.0)
+- hugo (0.170.1)
 - ca-certificates (20260816ubuntu0.26.04.2)
 - openssh-client (1:10.2p1-2ubuntu3.8)
 - openssl (3.5.5-1ubuntu3.7)

@@ -6,10 +6,40 @@
     "surname": "Castellano Vela",
     "email": "alvaro@windmaker.net"
   },
+  "required_repositories": {
+    "name": "percona-valkey-91",
+    "apt_sources": {
+      "types": [
+        "deb"
+      ],
+      "uris": [
+        "http://packages.windmaker.net/percona-valkey"
+      ],
+      "suites": [
+        "resolute"
+      ],
+      "components": [
+        "main"
+      ],
+      "architectures": [
+        "amd64"
+      ],
+      "gpg_keyring": "/etc/apt/keyrings/windmaker.gpg"
+    },
+    "gpg_keyring": {
+      "name": "windmaker",
+      "content": {
+        "type": "url",
+        "data": [
+          "http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub"
+        ]
+      }
+    }
+  },
   "packages": [
     {
-      "name": "valkey-server",
-      "version": "9.0.6-0ubuntu0.1"
+      "name": "percona-valkey-server",
+      "version": "1:9.1.2-1.resolute"
     }
   ],
   "exposed_ports": [
@@ -21,7 +51,7 @@
     "no"
   ],
   "readme": {
-    "description": "This image is based on [base image](/base) and comes with valkey-server installed.",
+    "description": "This image is based on [base image](/base) and comes with percona-valkey-server installed.",
     "additional_features": [
       "Exposes port 6379.",
       "Runs valkey-server with `--protected-mode no` by default."

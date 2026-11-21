@@ -8,12 +8,16 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 RUN \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y gnupg ca-certificates wget --no-install-recommends && \
-  gpg --keyserver keyserver.ubuntu.com --recv-keys 2F59B5F99B1BE0B4 && \
-  gpg --export 2F59B5F99B1BE0B4 | gpg --dearmor > /etc/apt/keyrings/nodejs.gpg && \
-  echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/nodejs.gpg] https://deb.nodesource.com/node_24.x nodistro main" >> /etc/apt/sources.list.d/nodejs.list && \
+  wget -qO- http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub >> /etc/apt/keyrings/windmaker.gpg && \
+  echo "Types: deb " > /etc/apt/sources.list.d/nodejs.sources && \
+  echo "URIs: http://packages.windmaker.net/nodejs " >> /etc/apt/sources.list.d/nodejs.sources && \
+  echo "Suites: any " >> /etc/apt/sources.list.d/nodejs.sources && \
+  echo "Components: main " >> /etc/apt/sources.list.d/nodejs.sources && \
+  echo "Architectures: amd64 " >> /etc/apt/sources.list.d/nodejs.sources && \
+  echo "Signed-By: /etc/apt/keyrings/windmaker.gpg" >> /etc/apt/sources.list.d/nodejs.sources && \
   apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    nodejs=24.22.3-1nodesource1 \
+    nodejs=26.13.1-1nodesource1 \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \

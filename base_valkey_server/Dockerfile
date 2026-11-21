@@ -7,8 +7,17 @@ MAINTAINER Álvaro Castellano Vela <alvaro@windmaker.net>
 
 RUN \
   apt-get update -qq && \
+  apt-get install -qq -o=Dpkg::Use-Pty=0 -y gnupg ca-certificates wget --no-install-recommends && \
+  wget -qO- http://packages.windmaker.net/WINDMAKER-GPG-KEY.pub >> /etc/apt/keyrings/windmaker.gpg && \
+  echo "Types: deb " > /etc/apt/sources.list.d/percona-valkey-91.sources && \
+  echo "URIs: http://packages.windmaker.net/percona-valkey " >> /etc/apt/sources.list.d/percona-valkey-91.sources && \
+  echo "Suites: resolute " >> /etc/apt/sources.list.d/percona-valkey-91.sources && \
+  echo "Components: main " >> /etc/apt/sources.list.d/percona-valkey-91.sources && \
+  echo "Architectures: amd64 " >> /etc/apt/sources.list.d/percona-valkey-91.sources && \
+  echo "Signed-By: /etc/apt/keyrings/windmaker.gpg" >> /etc/apt/sources.list.d/percona-valkey-91.sources && \
+  apt-get update -qq && \
   apt-get install -qq -o=Dpkg::Use-Pty=0 -y \
-    valkey-server=9.0.6-0ubuntu0.1 \
+    percona-valkey-server=1:9.1.2-1.resolute \
     --no-install-recommends && \
   apt-get purge -qq -o=Dpkg::Use-Pty=0 -y gnupg wget ca-certificates && \
   apt-get autoremove -qq -o=Dpkg::Use-Pty=0 -y && \
